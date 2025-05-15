@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+/* Nav Bar */
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+    background-color: transparent; /* Default background */
+}
+  
+nav:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1; /* Make sure it's behind the navbar content */
+    transition: background-color 0.3s ease-in-out;
+}
+  
+nav.sticky {
+    background-color: #ff9696;
+}
+  
+nav.sticky:before {
+    background-color: #ff9696;
+}
+
+.text-custom-navbar{
+    font-size: 1.25em;
+}
+.navbar-button{
+    padding: 1rem 0 1rem 0;
+}
+
+.navbar-dropdown {
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    border: 2px solid pink;
+    z-index: 1;
+    border-radius: 8px;
+    margin-top: 0;
+    padding: 2%;
+    top: 100%;
+}
+
+.navbar-dropdown a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FF5656;
+    border-top: 1px solid #FFA5A5;
+}
+.navbar-dropdown a:first-child {
+    border-top: none; /* Remove the top border from the first item */
+}
+
+.dropdown:hover .navbar-dropdown,
+.navbar-dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-20%);
+    transition: all 1.2s ease;
+}
+
+.hamburger-menu{
+    align-items: end;
+}
+
+.hamburger-link{
+    text-align: end;
+    background-color: white;
+    border: 1px solid #FFA5A5;
+    color: #FF5656;
+    padding: 0 1.6rem 0 0;
+}
+
+.hamburger-link a{
+    margin: 0 0 0.5rem 0;
+    transition: all 0.6s ease;
+}
+.hamburger-link a:active{
+    text-decoration: underline 2px solid #FF5656 ;
+}
+
+.hamburger-link a:active{
+    color: #ffa7a7;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+.hover-underline-animation::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #0087ca;
+transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation::after {
+    transform-origin: bottom center;
+}
+
+.hover-underline-animation:hover::after {
+    transform-origin: bottom center;
+}
+
+/* Landing */
+.landing-headline{
+    text-shadow: 0px 0px 15px rgba(255, 25, 25, 0.4);
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.landing-subline{
+    letter-spacing: 2px;
+}
+
+.hover-outline-rose:hover{
+    text-shadow: 0px 0px 5px rgb(250, 40, 40), 0px 0px 10px rgb(250, 40, 40), 0px 0px 12px rgb(250, 40, 40);
+}
+
+.slowmo-link-hover{
+    transition: all 0.6s ease;
+}
+
+.slowmo-button-hover{
+    transition: all 0.8s ease;
+}
+
+.slowmo-button-hover:hover img,
+.slowmo-button-hover:hover p{
+    filter: brightness(100);
+    transition: all 0.9s ease-in-out;
+}
+
+/* Tours */
+.tours-div{
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.tours-detail-animation{
+    transition: all 0.5s ease-in-out;
+}
+
+.progress-bar{
+    max-width: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+.span-tour-detail-underline {
+    text-decoration: underline wavy red;
+    text-underline-position: under;
+    padding-bottom: 2px;
+}
+  
+
+/* Packages */
+/* SpecialOffers.css */
+
+.special-offers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #E93A3A;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1.125rem;
+  color: #4A4A4A;
+  margin-bottom: 40px;
+}
+
+/* Image Grid */
+/* SpecialOffers.css */
+
+.special-offers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #E93A3A;
+    margin-bottom: 20px;
+  }
+  
+  .header p {
+    font-size: 1.125rem;
+    color: #4A4A4A;
+    margin-bottom: 40px;
+  }
+
+.animation-zoom-in:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  img {
+    object-fit: cover; /* Ensure the image fills the container */
+    object-position: center; /* Keep the center of the image visible */
+    width: 100%; /* Ensure the image fills the container's width */
+    height: 270px; /* Set fixed height */
+  }
+
+  /* Packages */
+.group img {
+  transition: transform 0.3s ease;
+}
+
+.group:hover img {
+  transform: scale(1.1);
+}
+
+.group {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.package-bg{
+    background-color: #fff0f0;
+}
+
+.offer-title{
+    color : #a80b0b;
+}
+
+.offer-desc{
+    color: #ff7474;
+}
+
+.logo-left-right{
+    width: 6rem;
+    height: 6rem;
+}
+
+.testimonials-text{
+  color: #F87272;
+}
+
+.explore-link {
+  position: relative;
+  display: inline;
+}
+
+.explore-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: pink; /* The color of the underline */
+  border-radius: 1rem;
+  transition: width 0.5s ease; /* Duration of the underline animation */
+}
+
+.explore-link:hover::after {
+  width: 100%; /* On hover, the underline expands to full width */
+}
