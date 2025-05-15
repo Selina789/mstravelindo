@@ -1,9 +1,10 @@
 import React from 'react';
 import '../index.css';
+import backgroundImage from '../assets/landing/landing.png';
 
 const Landing = () => {
   return (
-    <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: 'url(src/assets/landing/landing.png)' }}>
+    <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
       {/* Background Image */}
       <div className="absolute inset-0 bg-black opacity-10"></div> {/* Optional: overlay for better contrast */}
 
