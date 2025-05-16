@@ -91,14 +91,14 @@ function Tours() {
   };
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20 ml-10 mr-10 sm:ml-0 sm:mr-0 md:ml-0 md:mr-0 lg:ml-0 lg:mr-0">
+    <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20 pl-10 pr-10 sm:pl-0 sm:pr-0 md:pl-0 md:pr-0 lg:pl-0 lg:pr-0">
       <div className="flex items-center sm:justify-start mb-4">
         <div className="w-10 h-[3px] bg-red-600 rounded-xl" /> {/* Left Line */}
         <h2 className="text-2xl sm:text-3xl font-bold text-red-600 ml-4">PACKAGE TOUR</h2> {/* Title with margin */}
         <img src={tourLogo} alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12 ml-4" /> {/* Logo */}
       </div>
 
-      <p className="text-base sm:text-lg text-gray-600 mt-4 ml-12 mb-5 text-red-500">
+      <p className="text-base sm:text-lg text-gray-600 mt-4 md:ml-12 lg:ml-12 mb-5 text-red-500">
         Take a look at various tour packages that{' '}
         <span className="span-tour-detail-underline">
           <a href="#">we provide</a>
