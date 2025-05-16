@@ -10,7 +10,7 @@ const Landing = () => {
 
       {/* Centered Content */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center text-white h-full px-4">
-        <h1 className="landing-headline text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4">
+        <h1 className="landing-headline text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
           TRAVEL AROUND <br/> THE WORLD
         </h1>
         <p className="landing-headline text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 font-medium tracking-wide drop-shadow-lg drop-shadow-red-500/50 landing-subline">
