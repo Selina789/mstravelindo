@@ -91,7 +91,7 @@ function Tours() {
   };
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20 pl-10 pr-10 sm:pl-0 sm:pr-0 md:pl-0 md:pr-0 lg:pl-0 lg:pr-0">
+    <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20 pl-10 pr-10 sm:p-0 md:p-0 lg:p-0">
       <div className="flex items-center sm:justify-start mb-4">
         <div className="w-10 h-[3px] bg-red-600 rounded-xl" /> {/* Left Line */}
         <h2 className="text-2xl sm:text-3xl font-bold text-red-600 ml-4">PACKAGE TOUR</h2> {/* Title with margin */}
