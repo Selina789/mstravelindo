@@ -59,7 +59,7 @@ function App() {
   return (
     <div className="container mx-auto text-center my-12 mt-20 mb-20">
       <h1 className="text-4xl font-bold text-red-500 mb-7">OUR SERVICES</h1>
-      <p className="text-lg text-gray-700 mb-6">
+      <p className="text-base lg:text-lg text-gray-700 mb-6">
         Various services to make your travelling life easy and happier, don't miss out on your trip!
       </p>
 

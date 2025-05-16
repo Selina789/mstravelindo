@@ -56,7 +56,7 @@ const Testimonials = () => {
       <div className="mb-20 mt-10">
         <div className="text-center mb-12 flex items-center justify-center align-center space-x-4">
           <h2 className="text-2xl font-bold testimonials-text mb-3 lg:text-3xl md:text-3xl">What Our Customers Say</h2>
-          <img src={speechBubble} className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" alt="Speech Bubble" />
+          <img src={speechBubble} className="w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10" alt="Speech Bubble" />
         </div>
 
         {/* Testimonials Grid with Centered Text */}
