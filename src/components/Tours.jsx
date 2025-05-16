@@ -50,25 +50,21 @@ const slides = [
 
 function Tours() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [slidesPerPage, setSlidesPerPage] = useState(3); // Default to 3 for large screens
+  const [slidesPerPage, setSlidesPerPage] = useState(3);
 
-  // Detect the screen size and update the number of slides per page accordingly
   const updateSlidesPerPage = () => {
     if (window.innerWidth >= 1024) {
-      setSlidesPerPage(3); // Large screens (3 images per page)
+      setSlidesPerPage(3);
     } else if (window.innerWidth >= 768) {
-      setSlidesPerPage(2); // Medium screens (2 images per page)
+      setSlidesPerPage(2);
     } else {
-      setSlidesPerPage(1); // Small screens (1 image per page)
+      setSlidesPerPage(1);
     }
   };
 
   useEffect(() => {
-    // Update slides per page on mount and when the screen is resized
     updateSlidesPerPage();
     window.addEventListener('resize', updateSlidesPerPage);
-
-    // Cleanup listener on unmount
     return () => {
       window.removeEventListener('resize', updateSlidesPerPage);
     };
@@ -78,7 +74,7 @@ function Tours() {
     if (currentSlide + slidesPerPage < slides.length) {
       setCurrentSlide(currentSlide + slidesPerPage);
     } else {
-      setCurrentSlide(0); // Go back to the first set of slides
+      setCurrentSlide(0);
     }
   };
 
@@ -86,16 +82,16 @@ function Tours() {
     if (currentSlide - slidesPerPage >= 0) {
       setCurrentSlide(currentSlide - slidesPerPage);
     } else {
-      setCurrentSlide(slides.length - slidesPerPage); // Go to the last set of slides
+      setCurrentSlide(slides.length - slidesPerPage);
     }
   };
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20 pl-10 pr-10 sm:p-0 md:p-0 lg:p-0">
+    <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20 px-7 sm:px-0">
       <div className="flex items-center sm:justify-start mb-4">
-        <div className="w-10 h-[3px] bg-red-600 rounded-xl" /> {/* Left Line */}
-        <h2 className="text-2xl sm:text-3xl font-bold text-red-600 ml-4">PACKAGE TOUR</h2> {/* Title with margin */}
-        <img src={tourLogo} alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12 ml-4" /> {/* Logo */}
+        <div className="w-10 h-[3px] bg-red-600 rounded-xl" />
+        <h2 className="text-2xl sm:text-3xl font-bold text-red-600 ml-4">PACKAGE TOUR</h2>
+        <img src={tourLogo} alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12 ml-4" />
       </div>
 
       <p className="text-base sm:text-lg text-gray-600 mt-4 md:ml-12 lg:ml-12 mb-5 text-red-500">
@@ -115,19 +111,22 @@ function Tours() {
           </button>
         </div>
 
-        <div className="relative overflow-hidden w-full sm:w-3/4 mt-5">
-          <div className="flex justify-center transition-transform duration-500 ease-in-out">
+        <div className="relative w-full sm:w-3/4 mt-5 overflow-hidden ">
+          <div className="round-div flex transition-transform duration-500 ease-in-out">
             {slides.map((slide, index) => (
               <div
                 key={index}
-                className="relative group flex-shrink-0 w-full sm:w-[260px] mx-2 mb-4"
-                style={{ display: index >= currentSlide && index < currentSlide + slidesPerPage ? 'block' : 'none' }}
+                className="relative group flex-shrink-0 px-2 mb-4"
+                style={{
+                  width: `${100 / slidesPerPage}%`,
+                  display: index >= currentSlide && index < currentSlide + slidesPerPage ? 'block' : 'none',
+                }}
               >
                 <a href="#">
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="w-full h-[300px] sm:h-[400px] object-cover rounded-lg border-2 border-gray-300"
+                    className="w-full h-[300px] sm:h-[450px] object-cover rounded-lg border-2 border-red-300 p-1"
                   />
                 </a>
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-black bg-opacity-50 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
