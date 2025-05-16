@@ -92,20 +92,20 @@ function Tours() {
 
   return (
     <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20">
-      <div className="flex items-center sm:justify-start mb-4">
+      <div className="flex items-center sm:justify-start mb-4 ml-10">
         <div className="w-10 h-[3px] bg-red-600 rounded-xl" /> {/* Left Line */}
         <h2 className="text-2xl sm:text-3xl font-bold text-red-600 ml-4">PACKAGE TOUR</h2> {/* Title with margin */}
         <img src={tourLogo} alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12 ml-4" /> {/* Logo */}
       </div>
 
-      <p className="text-base sm:text-lg text-gray-600 mt-4 ml-12 mb-5 text-red-500">
+      <p className="text-base sm:text-lg text-gray-600 mt-4 ml-12 mb-5 text-red-500 ml-40">
         Take a look at various tour packages that{' '}
         <span className="span-tour-detail-underline">
           <a href="#">we provide</a>
         </span>
       </p>
 
-      <div className="flex items-center justify-center space-x-4 sm:space-x-6">
+      <div className="flex items-center justify-center mr-10 ml-10 space-x-4 sm:space-x-6">
         <div className="w-[40px] sm:w-[60px]">
           <button
             onClick={prevSlide}
