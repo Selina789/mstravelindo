@@ -55,8 +55,8 @@ const Testimonials = () => {
       {/* Section Title */}
       <div className="mb-20 mt-10">
         <div className="text-center mb-12 flex items-center justify-center align-center space-x-4">
-          <h2 className="text-2xl font-semibold testimonials-text mb-3 lg:text-3xl md:text-3xl">What Our Customers Say</h2>
-          <img src={speechBubble} className="w-8 h-8 md:w-10 md:h-10 lg:w-10 lg:h-10" alt="Speech Bubble" />
+          <h2 className="text-2xl font-bold testimonials-text mb-3 lg:text-3xl md:text-3xl">What Our Customers Say</h2>
+          <img src={speechBubble} className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" alt="Speech Bubble" />
         </div>
 
         {/* Testimonials Grid with Centered Text */}
@@ -83,7 +83,7 @@ const Testimonials = () => {
 
       {/* Why Choose Us Section with Pink Background */}
       <div className="bg-pink-50 w-full py-12 mb-10" ref={sectionRef}>
-        <h3 className="text-3xl font-semibold text-center mb-10 testimonials-text">Why Choose Us? <span role="img" aria-label="Globe">🌍</span></h3>
+        <h3 className="text-3xl font-bold text-center mb-10 testimonials-text">Why Choose Us? <span role="img" aria-label="Globe">🌍</span></h3>
         <div className="flex flex-col md:flex-row justify-center gap-10 md:space-x-20 mt-20 mb-10"> {/* Adjusted responsive flex layout */}
           <div className="flex flex-col items-center mb-8 md:mb-0">
             <img src={globeIcon} alt="Destinations" className="w-12 h-12 mb-4 object-contain" />

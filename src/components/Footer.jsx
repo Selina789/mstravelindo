@@ -12,11 +12,11 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start space-y-10 lg:space-y-0 p-10 lg:pl-20">
           {/* Contact Us Section */}
           <div className="flex flex-col items-start lg:w-1/3">
-            <h4 className="text-xl font-semibold mb-8 lg:underline md:underline">Contact Us</h4>
+            <h4 className="landing-headline text-xl font-bold mb-8 lg:underline md:underline">CONTACT US</h4>
             <ul className="space-y-6">
               <li className="flex items-center mb-2">
                 <img src={pinLogo} alt="Location" className="w-6 h-6 mr-2" />
-                Komplek Nagoya Newton Blok S No 5
+                Komplek Nagoya Newton Blok S No. 5
               </li>
               <li className="flex items-center mb-2">
                 <img src={mailLogo} alt="Email" className="w-6 h-6 mr-2" />
@@ -33,7 +33,7 @@ const Footer = () => {
 
           {/* Explore Section */}
           <div className="flex flex-col items-start lg:w-1/3 lg:pl-40 sm:pl-0">
-            <h4 className="text-2xl font-semibold mb-4 lg:underline md:underline">Explore</h4>
+            <h4 className="landing-headline text-2xl font-bold mb-4 lg:underline md:underline">EXPLORE</h4>
             <ul className="flex flex-col gap-4 mt-3">
               <a href="#" className="flex items-center mb-2">
                 <span className="explore-link">Destinations</span>

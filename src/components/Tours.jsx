@@ -91,7 +91,7 @@ function Tours() {
   };
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20">
+    <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20 sm:ml-10 sm:mr-10">
       <div className="flex items-center sm:justify-start mb-4">
         <div className="w-10 h-[3px] bg-red-600 rounded-xl" /> {/* Left Line */}
         <h2 className="text-2xl sm:text-3xl font-bold text-red-600 ml-4">PACKAGE TOUR</h2> {/* Title with margin */}
@@ -105,7 +105,7 @@ function Tours() {
         </span>
       </p>
 
-      <div className="flex items-center justify-center space-x-4 sm:space-x-6 sm:ml-10">
+      <div className="flex items-center justify-center space-x-4 sm:space-x-6">
         <div className="w-[40px] sm:w-[60px]">
           <button
             onClick={prevSlide}
@@ -154,7 +154,7 @@ function Tours() {
       </div>
 
       <div className="flex justify-center mt-3">
-        <div className="w-[40%] sm:w-[20%] bg-gray-200 rounded-full h-1 mt-5 sm:mr-10">
+        <div className="w-[40%] sm:w-[20%] bg-gray-200 rounded-full h-1 mt-5">
           <div
             className="bg-red-500 h-1 rounded-full progress-bar"
             style={{
