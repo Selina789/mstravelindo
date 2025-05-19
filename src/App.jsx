@@ -1,23 +1,24 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
-import Landing from "./components/Landing";
-import Tours from "./components/Tours";
-import SpecialOffers from "./components/Packages";
-import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
-import Footer from "./components/Footer";
+import Landing from "./Landing";
+import AboutPage from "./pages/AboutPage";
+import ToursPage from "./pages/ToursPage";
+import TicketsPage from "./pages/TicketsPage";
+import OthersPage from "./pages/OthersPage";
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <NavBar />
-      <Landing />
-      <Tours /> 
-      <SpecialOffers />
-      <Services />
-      <Testimonials />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<AboutPage />} />   
+        <Route path="/tours" element={<ToursPage />} />
+        <Route path="/tickets" element={<TicketsPage />} />
+        <Route path="/others" element={<OthersPage />} />
+      </Routes>
+    </Router>
   );
 };
 
