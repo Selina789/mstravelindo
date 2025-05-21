@@ -13,18 +13,11 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      setScrolled(isScrolled);
-
-      const navbar = document.querySelector("nav");
-      if (isScrolled) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -34,7 +27,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-20 p-6 transition-colors duration-500 ${isLanding ? 'bg-transparent' : 'bg-red-400'}`}>
+<nav className={`fixed top-0 left-0 w-full z-20 p-6 transition-colors duration-500 
+  ${isLanding 
+    ? (scrolled ? 'bg-red-400 bg-opacity-100' : 'bg-transparent') 
+    : 'bg-red-400'}`}>
+
       <div className="hidden lg:flex md:flex text-custom-navbar max-w-screen-xl mx-auto items-center justify-between space-x-6">
         <img src={mstLogo} className="mstLogo h-12 w-auto object-contain" alt="MST Logo" />
 
@@ -42,10 +39,11 @@ const Navbar = () => {
         <Link to="/about" className={`slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>ABOUT</Link>
 
         <div className="dropdown relative">
-          <button className={`navbar-button slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>
+          <Link to="/tours" className={`navbar-button slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg 
+            ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>
             TOURS <span className="caret md:text-xs lg:text-base">▼</span>
-          </button>
-          <div className="navbar-dropdown absolute bg-white text-black shadow-lg rounded-md mt-2 w-40">
+          </Link>
+          <div className="navbar-dropdown absolute bg-white text-black shadow-lg rounded-md mt-3 w-40">
             <Link to="/tours/asia" className="block px-4 py-2 font-bold hover:bg-gray-100">ASIA</Link>
             <Link to="/tours/europe" className="block px-4 py-2 font-bold hover:bg-gray-100">EUROPE</Link>
             <Link to="/tours/america" className="block px-4 py-2 font-bold hover:bg-gray-100">AMERICA</Link>
@@ -54,33 +52,31 @@ const Navbar = () => {
         </div>
 
         <div className="dropdown relative">
-          <button className={`navbar-button slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>
+          <Link to="/tickets" className={`navbar-button slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>
             TICKETS <span className="caret md:text-xs lg:text-base">▼</span>
-          </button>
-          <div className="navbar-dropdown absolute bg-white text-black shadow-lg rounded-md mt-2 w-40">
+          </Link>
+          <div className="navbar-dropdown absolute bg-white text-black shadow-lg rounded-md mt-3 w-40">
             <Link to="/tickets/ferry" className="block px-4 py-2 font-bold hover:bg-gray-100">FERRY</Link>
             <Link to="/tickets/plane" className="block px-4 py-2 font-bold hover:bg-gray-100">PESAWAT</Link>
-            <Link to="/tickets/pelni" className="block px-4 py-2 font-bold hover:bg-gray-100">PELNI</Link>
           </div>
         </div>
 
         <div className="dropdown relative">
-          <button className={`navbar-button slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>
+          <Link to="/others" className={`navbar-button slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>
             OTHERS <span className="caret md:text-xs lg:text-base">▼</span>
-          </button>
-          <div className="navbar-dropdown absolute bg-white text-black shadow-lg rounded-md mt-2 w-40">
+          </Link>
+          <div className="navbar-dropdown absolute bg-white text-black shadow-lg rounded-md mt-3 w-40">
             <Link to="/others/visa" className="block px-4 py-2 font-bold hover:bg-gray-100">VISA</Link>
-            <Link to="/others/vehicles" className="block px-4 py-2 font-bold hover:bg-gray-100">VEHICLES</Link>
+            <Link to="/others/vehicles" className="block px-4 py-2 font-bold hover:bg-gray-100">KENDARAAN</Link>
           </div>
         </div>
 
-        <Link
-          to="/contact"
+        <a href="https://wa.me/6282170824534" target="_blank" rel="noopener noreferrer"
           className={`slowmo-button-hover font-bold py-3 px-6 text-base transition tracking-wide animation sm:text-xs md:text-ms lg:text-lg md:px-4 md:py-2
             ${isNotLanding ? 'bg-white text-rose-500 hover:bg-red-600 hover:text-white'
-            : (scrolled ? 'bg-white text-rose-500 hover:bg-red-600 hover:text-white': 'bg-red-400 text-white hover:bg-white-600')}`}>
+            : (scrolled ? 'bg-white text-rose-500 hover:bg-red-600 hover:text-white': 'bg-red-400 text-white hover:bg-red-600')}`}>
           CONTACT US
-        </Link>
+        </a>
       </div>
 
       {/* Mobile Navbar */}
@@ -93,7 +89,10 @@ const Navbar = () => {
         <Link to="/tours" className="block py-2 text-lg font-bold">TOURS</Link>
         <Link to="/tickets" className="block py-2 text-lg font-bold">TICKETS</Link>
         <Link to="/others" className="block py-2 text-lg font-bold">RENTAL</Link>
-        <Link to="/contact" className="block py-2 text-lg font-bold">CONTACT US</Link>
+        <a href="https://wa.me/6282170824534" target="_blank" rel="noopener noreferrer" className="block py-2 text-lg font-bold">
+          CONTACT US
+        </a>
+
       </div>
 
       {/* Hamburger Button */}

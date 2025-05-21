@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import backgroundImage from '../assets/landing/landing.png';
+import backgroundImage from '../assets/landing/landing2.png';
 
 const Landing = () => {
   return (
