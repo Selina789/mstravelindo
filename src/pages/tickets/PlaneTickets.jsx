@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import backArrow from '../../assets/back-arrow.png';
 import Footer from "../../components/Footer";
+import '../../index.css';
 
 const tours = [
   {

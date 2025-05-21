@@ -12,6 +12,10 @@ html {
   user-select: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 
 p {
     font-family: 'Hammersmith One', sans-serif;
