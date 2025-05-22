@@ -13,9 +13,9 @@ html {
 }
 
 body {
+  width: 100vw;
   overflow-x: hidden;
 }
-
 
 p {
     font-family: 'Hammersmith One', sans-serif;
