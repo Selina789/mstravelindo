@@ -32,7 +32,8 @@ const Footer = () => {
         <div className="lg:hidden md:block w-full border-t mb-5 md:mb-10 sm:block"></div>
 
           {/* Explore Section */}
-          <div className="flex flex-col items-start lg:w-1/3 lg:pl-40 sm:pl-0">
+          <div className="footer-second-column flex flex-col items-start lg:w-1/3 lg-mid:w-2/3 lg:pl-40 sm:pl-0">
+
             <h4 className="footer-headline text-2xl font-bold mb-2 md:mb-4 lg:underline md:underline">EXPLORE</h4>
             <ul className="flex flex-col gap-2 md:gap-4 mt-3">
               <a href="#" className="flex items-center mb-2">
@@ -56,7 +57,7 @@ const Footer = () => {
           <div className="lg:hidden md:block w-full border-t mb-10 sm:block"></div>
 
           {/* Let's Travel Together Section */}
-          <div className="flex flex-col items-start lg:w-1/3 text-left lg:pl-20 sm:pl-0">
+          <div className="flex flex-col items-start lg:w-1/3 lg-mid:w-2/3 text-left lg:pl-20 sm:pl-0">
             <h4 className="block text-2xl font-semibold mb-4 tracking-wider">Let's Travel 
               <span className="flex flex-row items-center tracking-wider text-2xl"> Together
                 <img src={planeLogo} alt="Contact Us" className="w-6 h-6 mr-2 ml-2 -rotate-45" />

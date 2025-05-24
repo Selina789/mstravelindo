@@ -52,7 +52,7 @@ function App() {
         setItems(updatedItems);
         trackRef.current.style.transform = "translateX(0)";
       }, 600);
-    }, 2500); // Every 2.5s
+    }, 4000); // Every 2.5s
     return () => clearInterval(interval);
   }, [items]);
 

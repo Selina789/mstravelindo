@@ -4,6 +4,8 @@ import americaMain from  '../assets/tours-img/america-main.jpg';
 import europeMain from  '../assets/tours-img/europe-main.jpg';
 import indonesiaMain from  '../assets/tours-img/indonesia-main.jpg';
 import Footer from "../components/Footer";
+import Packages from "../components/Packages";
+import ToursLanding from "../components/Tours";
 import tourLogo from '../assets/tours-landing/tour-logo.jpg';
 import { Link } from 'react-router-dom';
 
@@ -33,7 +35,7 @@ const packages = [
 const Tours = () => {
   return (
   <>
-    <section className="py-8 px-4 text-center mt-20">
+    <section className="py-8 text-center mt-20">
       <div className="flex items-center justify-center mt-8 mb-4">
         <h2 className="text-2xl sm:text-3xl font-bold text-red-600 ml-4">PACKAGE TOUR</h2>
         <img src={tourLogo} alt="Logo" className="slowmo-link-hover hover:scale-105 w-10 h-10 sm:w-12 sm:h-12 ml-4" />
@@ -43,12 +45,12 @@ const Tours = () => {
         A wonderful tour to different sides of the world.
       </p>
 
-      <div className="flex flex-col items-center gap-12">
+      <div className="flex flex-col items-center gap-12 mb-20">
         {packages.map((item, index) => (
           <Link
             key={index}
             to={item.link}
-            className="w-full max-w-md sm:max-w-md md:max-w-lg lg:max-w-xl"
+            className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl"
           >
             <div className="relative overflow-hidden rounded-2xl shadow-lg group">
               <img
@@ -64,6 +66,8 @@ const Tours = () => {
           </Link>
         ))}
       </div>
+      <Packages></Packages>
+      <ToursLanding></ToursLanding>
     </section>
     <Footer />
     </>

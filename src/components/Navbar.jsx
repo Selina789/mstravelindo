@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import '../index.css';
 import mstLogo from '../assets/logo.png';
+import mstLogo2 from '../assets/logo2.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
     : 'bg-red-400'}`}>
 
       <div className="hidden lg:flex md:flex text-custom-navbar max-w-screen-xl mx-auto items-center justify-between space-x-6">
-        <img src={mstLogo} className="mstLogo h-12 w-auto object-contain" alt="MST Logo" />
+        <Link to="/"><img src={mstLogo2} className="mstLogo h-7 space-y-auto w-auto object-contain" alt="MST Logo" /></Link>
 
         <Link to="/" className={`slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>HOME</Link>
         <Link to="/about" className={`slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>ABOUT</Link>
@@ -84,20 +85,21 @@ const Navbar = () => {
         <div className="flex justify-end h-3">
           <button className="text-white font-bold text-2xl" onClick={toggleMenu}>&times;</button>
         </div>
-        <Link to="/" className="block py-2 text-lg font-bold">HOME</Link>
-        <Link to="/about" className="block py-2 text-lg font-bold">ABOUT</Link>
-        <Link to="/tours" className="block py-2 text-lg font-bold">TOURS</Link>
-        <Link to="/tickets" className="block py-2 text-lg font-bold">TICKETS</Link>
-        <Link to="/others" className="block py-2 text-lg font-bold">RENTAL</Link>
-        <a href="https://wa.me/6282170824534" target="_blank" rel="noopener noreferrer" className="block py-2 text-lg font-bold">
-          CONTACT US
-        </a>
-
-      </div>
+          <Link to="/" className="block py-2 text-lg font-bold">HOME</Link>
+          <Link to="/about" className="block py-2 text-lg font-bold">ABOUT</Link>
+          <Link to="/tours" className="block py-2 text-lg font-bold">TOURS</Link>
+          <Link to="/tickets" className="block py-2 text-lg font-bold">TICKETS</Link>
+          <Link to="/others" className="block py-2 text-lg font-bold">RENTAL</Link>
+          <div className="flex justify-end pb-5">
+            <a href="https://wa.me/6282170824534" target="_blank" rel="noopener noreferrer" className="px-4 bg-red-600 block py-2 text-lg text-white font-bold hover:bg-red-400">
+              CONTACT US
+            </a>
+          </div>
+        </div>
 
       {/* Hamburger Button */}
       <div className="flex justify-between align-center items-center">
-        <img src={mstLogo} className="lg:hidden md:hidden h-12 w-auto object-contain" alt="MST Logo" />
+        <Link to="/"><img src={mstLogo2} className="lg:hidden md:hidden h-6 w-auto object-contain space-y-auto" alt="MST Logo" /></Link>
         <div className="hamburger-menu lg:hidden md:hidden flex flex-col space-y-2 cursor-pointer" onClick={toggleMenu}>
           <div className={`w-8 h-1 bg-white transition-all duration-300 ${isOpen ? 'rotate-45 translate-x-1.0 translate-y-3' : ''}`}></div>
           <div className={`w-8 h-1 bg-white transition-all duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></div>

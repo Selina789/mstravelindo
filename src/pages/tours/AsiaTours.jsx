@@ -6,7 +6,7 @@ import '../../index.css';
 
 const tours = [
   {
-    title: 'Tokyo Explorer',
+    title: 'Korea Seoul-Busan',
     departureDate: '2025-06-15',
     price: '12,500,000',
     image: 'https://cdn.pixabay.com/photo/2019/03/30/10/59/tokyo-4093741_1280.jpg',
@@ -18,7 +18,7 @@ const tours = [
     image: 'https://cdn.pixabay.com/photo/2017/01/20/00/30/bali-1993704_1280.jpg',
   },
   {
-    title: 'Seoul Highlights',
+    title: 'Vietnam',
     departureDate: '2025-08-05',
     price: '11,800,000',
     image: 'https://cdn.pixabay.com/photo/2016/11/18/16/15/seoul-1834263_1280.jpg',

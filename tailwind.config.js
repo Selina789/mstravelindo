@@ -1,10 +1,12 @@
 module.exports = {
-  content: [
-    './index.html',
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'lg-mid': { min: '1024px', max: '1270px' }
+      },
+    },
   },
-  plugins: [],
-}
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // make sure all your source files are listed
+  ],
+};

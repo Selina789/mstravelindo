@@ -126,7 +126,7 @@ function Tours() {
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="w-full h-[300px] sm:h-[450px] object-cover rounded-lg border-2 border-red-300 p-0 lg:p-1"
+                    className="w-full h-[300px] sm:h-[300px] md:h-[400px] lg:h-[400px] object-cover rounded-lg border-2 border-red-300 p-0 lg:p-1"
                   />
                 </a>
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-black bg-opacity-50 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
@@ -134,7 +134,7 @@ function Tours() {
                     <h3 className="text-base sm:xl md:xl lg:2xl font-bold">{slide.title}</h3>
                   </a>
                   <a href="#">
-                    <p className="text-xs sm:text-sm md:text-base lg:text-lg mt-4">{slide.description}</p>
+                    <p className="text-[10px] sm:text-base md:text-base lg:text-sm mt-4">{slide.description}</p>
                   </a>
                 </div>
               </div>
