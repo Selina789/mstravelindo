@@ -33,13 +33,13 @@ const Navbar = () => {
     ? (scrolled ? 'bg-red-400 bg-opacity-100' : 'bg-transparent') 
     : 'bg-red-400'}`}>
 
-      <div className="hidden lg:flex md:flex text-custom-navbar max-w-screen-xl mx-auto items-center justify-between space-x-6">
-        <Link to="/"><img src={mstLogo2} className="mstLogo h-7 space-y-auto w-auto object-contain" alt="MST Logo" /></Link>
+      <div className="hidden lg:flex md:flex text-custom-navbar max-w-screen-xl mx-auto items-center object-center justify-between space-x-6">
+        <Link to="/"><img src={mstLogo2} className="self-bottom object-bottom h-6 space-y-auto w-auto object-contain" alt="MST Logo" /></Link>
 
         <Link to="/" className={`slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>HOME</Link>
         <Link to="/about" className={`slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>ABOUT</Link>
 
-        <div className="dropdown relative">
+        <div className="dropdown relative md:mb-[5px] lg:mb-0">
           <Link to="/tours" className={`navbar-button slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg 
             ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>
             TOURS <span className="caret md:text-xs lg:text-base">▼</span>
@@ -52,7 +52,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="dropdown relative">
+        <div className="dropdown relative md:mb-[5px] lg:mb-0">
           <Link to="/tickets" className={`navbar-button slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>
             TICKETS <span className="caret md:text-xs lg:text-base">▼</span>
           </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="dropdown relative">
+        <div className="dropdown relative md:mb-[5px] lg:mb-0">
           <Link to="/others" className={`navbar-button slowmo-link-hover hover-outline-rose font-bold transition text-base sm:text-xs md:text-ms lg:text-lg ${isLanding ? 'text-white' : 'hover-outline-rose-notlanding'}`}>
             OTHERS <span className="caret md:text-xs lg:text-base">▼</span>
           </Link>
