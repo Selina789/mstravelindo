@@ -1,110 +1,89 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import backArrow from '../../assets/back-arrow.png';
-import Footer from "../../components/Footer";
+import Footer from '../../components/Footer';
+import avanzaImg from '../../assets/cars-img/avanza.png';
+import xl7Img from '../../assets/cars-img/xl7.png';
+import vanImg from '../../assets/cars-img/hiace.png';
 import '../../index.css';
 
-const tours = [
+const rentalData = [
   {
-    title: 'Tokyo Explorer',
-    departureDate: '2025-06-15',
-    price: '12,500,000',
-    image: 'https://cdn.pixabay.com/photo/2019/03/30/10/59/tokyo-4093741_1280.jpg',
+    name: 'Toyota Avanza',
+    type: '7-Seat MPV',
+    image: avanzaImg,
+    cityTour: 700000,
+    interland: 900000,
   },
   {
-    title: 'Bali Paradise',
-    departureDate: '2025-07-10',
-    price: '9,200,000',
-    image: 'https://cdn.pixabay.com/photo/2017/01/20/00/30/bali-1993704_1280.jpg',
+    name: 'Suzuki XL7',
+    type: '7-Seat SUV',
+    image: xl7Img,
+    cityTour: 700000,
+    interland: 900000,
   },
   {
-    title: 'Seoul Highlights',
-    departureDate: '2025-08-05',
-    price: '11,800,000',
-    image: 'https://cdn.pixabay.com/photo/2016/11/18/16/15/seoul-1834263_1280.jpg',
-  },
-  {
-    title: 'Bangkok Adventure',
-    departureDate: '2025-09-12',
-    price: '10,000,000',
-    image: 'https://cdn.pixabay.com/photo/2016/11/29/09/32/bangkok-1868450_1280.jpg',
-  },
-  {
-    title: 'Hanoi Heritage',
-    departureDate: '2025-10-20',
-    price: '9,500,000',
-    image: 'https://cdn.pixabay.com/photo/2019/03/22/14/09/hanoi-4072175_1280.jpg',
-  },
-  {
-    title: 'Singapore Skyline',
-    departureDate: '2025-11-15',
-    price: '13,000,000',
-    image: 'https://cdn.pixabay.com/photo/2015/09/18/11/36/singapore-944406_1280.jpg',
-  },
-  {
-    title: 'Kathmandu Trek',
-    departureDate: '2025-12-05',
-    price: '14,200,000',
-    image: 'https://cdn.pixabay.com/photo/2018/03/01/09/39/kathmandu-3198630_1280.jpg',
-  },
-  {
-    title: 'Jaipur Journey',
-    departureDate: '2026-01-10',
-    price: '10,800,000',
-    image: 'https://cdn.pixabay.com/photo/2017/01/20/00/30/jaipur-1993703_1280.jpg',
-  },
-  {
-    title: 'Shanghai Nights',
-    departureDate: '2026-02-18',
-    price: '12,300,000',
-    image: 'https://cdn.pixabay.com/photo/2016/11/29/09/32/shanghai-1868451_1280.jpg',
-  },
+    name: '12-Seat Van',
+    type: '12-Seat Van',
+    image: vanImg,
+    cityTour: 800000,
+    interland: 1000000,
+  }
 ];
 
 const RentalOthers = () => {
   return (
     <>
-    <div className="min-h-screen bg-white px-4 py-8 sm:px-6 lg:px-8 mt-16 flex flex-col items-center">
-      {/* Back Button */}
-      <Link to="/" className="text-base lg:text-xl w-full mt-4 ml-0 flex flex-row items-center lg:ml-20 lg:mt-10 group-hover:text-red-600 group-hover:scale-110">
-        <img src={backArrow} alt="Back" className="w-6 h-6 hover:scale-110 slowmo-link-hover" />
-        <h2 className="text-red-400 font-bold mt-[5px] lg:mt-[3px] ml-2 hover:scale-110 slowmo-link-hover">BACK</h2>
-      </Link>
+      <div className="min-h-screen bg-gradient-to-br from-red-50 to-white px-4 py-10 sm:px-10 md:px-20 lg:px-8 mt-16">
+        <Link to="/" className="text-base lg:text-xl w-full mt-4 ml-0 flex flex-row items-center lg:ml-20 lg:mt-10">
+          <img src={backArrow} alt="Back" className="w-6 h-6 hover:scale-110 transition-transform" />
+          <h2 className="text-red-400 font-bold mt-[5px] lg:mt-[3px] ml-2 hover:scale-110 transition-transform">BACK</h2>
+        </Link>
 
-      {/* Title */}
-      <h1 className="text-4xl font-bold text-red-600 text-center mt-10">Car Rental</h1>
-      <p className="text-red-400 italic text-center mb-10 mt-3"> (the continent of contrasts)</p>
+        <h1 className="text-4xl font-bold text-red-600 text-center mt-5 mb-2">RENTAL CARS</h1>
+        <p className="text-red-400 italic text-center mb-10">Explore Batam with comfort and style</p>
 
-      {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 justify-items-center">
-        {tours.map((tour, index) => (
+        {rentalData.map((car, idx) => (
           <div
-            key={index}
-            className="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-[260px] transition hover:scale-[1.02]"
+            key={idx}
+            className="bg-white/90 shadow-md border border-gray-200 rounded-xl overflow-hidden flex flex-col lg:flex-row items-center mb-12 max-w-4xl mx-auto"
           >
-            <img
-              src={tour.image}
-              alt={tour.title}
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="font-bold text-lg text-gray-900">{tour.title}</h3>
-              <p className="text-sm text-gray-500 mb-1">Departure: {tour.departureDate}</p>
-              <hr className="border-gray-300 my-1" />
-              <div className="flex justify-between items-center mt-2">
-                <p className="text-sm font-semibold">Rp. {tour.price}</p>
-                <a href="https://wa.me/6282170824534" target="_blank" rel="noopener noreferrer">
-                  <button className="slowmo-link-hover bg-red-300 hover:bg-red-400 text-white text-xs px-3 py-1 rounded-full font-semibold">
-                    INQUIRE
-                  </button>
-                </a>
+            {/* Car Image */}
+            <div className="w-full lg:w-2/3 bg-red-50 flex justify-center items-center p-0">
+              <img
+                src={car.image}
+                alt={car.name}
+                className="object-contain h-[200px] sm:h-[250px] md:h-[300px] transition-transform duration-300 hover:scale-110"
+              />
+            </div>
+
+            {/* Car Info */}
+            <div className="w-full lg:w-2/3 p-6">
+              <h2 className="text-3xl font-bold text-gray-800 mb-1">{car.name}</h2>
+              <p className="text-red-500 italic mb-4">{car.type}</p>
+
+              <div className="flex flex-col max-w-72 sm:flex-row justify-between text-sm mb-4">
+                <div className="mb-2 sm:mb-0">
+                  <p className="font-medium text-gray-600">City Tour 10 Hours</p>
+                  <p className="text-red-600 font-semibold">IDR {car.cityTour.toLocaleString()}</p>
+                </div>
+                <div>
+                  <p className="font-medium text-gray-600">Interland 10 Hours</p>
+                  <p className="text-blue-600 font-semibold">IDR {car.interland.toLocaleString()}</p>
+                </div>
               </div>
+
+              <a href="https://wa.me/6285224918888" target="_blank" rel="noopener noreferrer">
+                <button className="slowmo-link-hover bg-red-400 hover:bg-red-500 text-white px-5 py-1 rounded-full font-medium transition">
+                  INQUIRE NOW
+                </button>
+              </a>
             </div>
           </div>
         ))}
       </div>
-    </div>
-    <Footer />
+
+      <Footer />
     </>
   );
 };

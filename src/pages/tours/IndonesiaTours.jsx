@@ -74,7 +74,7 @@ const indonesiaTours = [
 const IndonesiaTours = () => (
   <>
     {/* Back Button outside layout flow */}
-    <div className="fixed mt-10 top-20 left-5 lg:left-20 z-50">
+    <div className="relative mt-10 top-20 left-5 lg:left-20 z-50">
       <Link
         to="/"
         className="flex items-center text-base lg:text-xl group hover:text-red-600"

@@ -68,7 +68,7 @@ const Navbar = () => {
           </Link>
           <div className="navbar-dropdown absolute bg-white text-black shadow-lg rounded-md mt-3 w-40">
             <Link to="/others/visa" className="block px-4 py-2 font-bold hover:bg-gray-100">VISA</Link>
-            <Link to="/others/vehicles" className="block px-4 py-2 font-bold hover:bg-gray-100">KENDARAAN</Link>
+            <Link to="/others/rental" className="block px-4 py-2 font-bold hover:bg-gray-100">KENDARAAN</Link>
           </div>
         </div>
 
