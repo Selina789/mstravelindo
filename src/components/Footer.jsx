@@ -7,9 +7,9 @@ import telephoneLogo from '../assets/footer/telephone.png';
 
 const Footer = () => {
   return (
-    <div className="bg-red-400 py-12 text-white mt-20">
+    <div className="bg-red-400 py-10 text-white mt-20 overflow-x-hidden">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row justify-between items-start space-y-10 p-0 pl-10 lg:space-y-0 md:p-10 lg:pl-20">
+        <div className="flex flex-col lg:flex-row justify-between items-start space-y-10 p-0 pl-10 lg:space-y-0 md:px-10 md:py-1 lg:pl-20">
           {/* Contact Us Section */}
           <div className="flex flex-col items-start lg:w-1/3">
             <h4 className="footer-headline text-xl font-bold mb-5 md:mb-8 lg:underline md:underline">CONTACT US</h4>
@@ -74,8 +74,8 @@ const Footer = () => {
       </div>
 
         {/* Footer Copyright */}
-      <div className="w-full text-center mt-10">
-        <div className="w-full border-t mb-10"></div>
+      <div className="w-full text-center mt-8">
+        <div className="w-full border-t mb-8"></div>
           <p className="text-base flex flex-col lg:text-lg md:text-lg ">MSTravelindo
             <span>Copyright @2025. All rights reserved.</span>
           </p>

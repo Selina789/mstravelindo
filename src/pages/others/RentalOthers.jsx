@@ -35,7 +35,7 @@ const RentalOthers = () => {
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-red-50 to-white px-4 py-10 sm:px-10 md:px-20 lg:px-8 mt-16">
-        <Link to="/" className="text-base lg:text-xl w-full mt-4 ml-0 flex flex-row items-center lg:ml-20 lg:mt-10">
+        <Link to="/" className="text-base lg:text-xl w-full mt-4 ml-0 flex flex-row items-center lg:pl-20 lg:mt-10">
           <img src={backArrow} alt="Back" className="w-6 h-6 hover:scale-110 transition-transform" />
           <h2 className="text-red-400 font-bold mt-[5px] lg:mt-[3px] ml-2 hover:scale-110 transition-transform">BACK</h2>
         </Link>
@@ -49,7 +49,7 @@ const RentalOthers = () => {
             className="bg-white/90 shadow-md border border-gray-200 rounded-xl overflow-hidden flex flex-col lg:flex-row items-center mb-12 max-w-4xl mx-auto"
           >
             {/* Car Image */}
-            <div className="w-full lg:w-2/3 bg-red-50 flex justify-center items-center p-0">
+            <div className="w-full lg:w-1/2 bg-red-50 flex justify-center items-center p-0">
               <img
                 src={car.image}
                 alt={car.name}
@@ -58,7 +58,7 @@ const RentalOthers = () => {
             </div>
 
             {/* Car Info */}
-            <div className="w-full lg:w-2/3 p-6">
+            <div className="w-full lg:w-1/2 p-6">
               <h2 className="text-3xl font-bold text-gray-800 mb-1">{car.name}</h2>
               <p className="text-red-500 italic mb-4">{car.type}</p>
 

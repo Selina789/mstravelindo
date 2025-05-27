@@ -144,7 +144,7 @@ const FerryTickets = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center gap-x-20 gap-y-15"
           >
             {paginated.map((ticket, index) => (
               <div

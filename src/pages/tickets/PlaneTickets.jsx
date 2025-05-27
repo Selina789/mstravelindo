@@ -6,38 +6,166 @@ import Footer from '../../components/Footer';
 import '../../index.css';
 
 const destinations = [
-  { country: 'Japan', continent: 'Asia', image: 'https://images.unsplash.com/photo-1559181567-c3190ca9959b' },
-  { country: 'France', continent: 'Europe', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34' },
-  { country: 'Thailand', continent: 'Asia', image: 'https://images.unsplash.com/photo-1505731133653-01d5f53b0648' },
-  { country: 'United States', continent: 'North America', image: 'https://images.unsplash.com/photo-1549921296-3a9d0a98a89b' },
-  { country: 'Italy', continent: 'Europe', image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0ea' },
-  { country: 'Turkey', continent: 'Europe', image: 'https://images.unsplash.com/photo-1588601883332-cd9a9d1b3a6e' },
-  { country: 'Mexico', continent: 'North America', image: 'https://images.unsplash.com/photo-1603302576836-2b4a153e4d15' },
-  { country: 'Spain', continent: 'Europe', image: 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad' },
-  { country: 'Germany', continent: 'Europe', image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be' },
-  { country: 'United Kingdom', continent: 'Europe', image: 'https://images.unsplash.com/photo-1555088465-17364c8e0b0c' },
-  { country: 'Australia', continent: 'Oceania', image: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d3' },
-  { country: 'China', continent: 'Asia', image: 'https://images.unsplash.com/photo-1548092372-0d1bd40894a3' },
-  { country: 'Canada', continent: 'North America', image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0' },
-  { country: 'Indonesia', continent: 'Asia', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e' },
-  { country: 'South Korea', continent: 'Asia', image: 'https://images.unsplash.com/photo-1549693578-d683be217e58' },
-  { country: 'Vietnam', continent: 'Asia', image: 'https://images.unsplash.com/photo-1576402187874-80f9b8b9035c' },
-  { country: 'Singapore', continent: 'Asia', image: 'https://images.unsplash.com/photo-1584438784894-089d6a62b8b2' },
-  { country: 'Brazil', continent: 'South America', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d' },
-  { country: 'India', continent: 'Asia', image: 'https://images.unsplash.com/photo-1548013146-72479768bada' },
-  { country: 'Netherlands', continent: 'Europe', image: 'https://images.unsplash.com/photo-1526470498-9ae73c665b1d' },
-  { country: 'Greece', continent: 'Europe', image: 'https://images.unsplash.com/photo-1504265689282-58f44e02f42e' },
-  { country: 'Malaysia', continent: 'Asia', image: 'https://images.unsplash.com/photo-1586087463713-3a1932a98b18' },
-  { country: 'Egypt', continent: 'Africa', image: 'https://images.unsplash.com/photo-1586363091793-6cf31e106a7f' },
-  { country: 'Russia', continent: 'Europe', image: 'https://images.unsplash.com/photo-1618220188520-b3449f157127' },
-  { country: 'Portugal', continent: 'Europe', image: 'https://images.unsplash.com/photo-1545259742-2f30cfcb8f34' },
-  { country: 'United Arab Emirates', continent: 'Asia', image: 'https://images.unsplash.com/photo-1603302577302-3f6f2df93b7e' },
-  { country: 'Morocco', continent: 'Africa', image: 'https://images.unsplash.com/photo-1531686264886-56d9439bdf45' },
-  { country: 'Switzerland', continent: 'Europe', image: 'https://images.unsplash.com/photo-1526481280690-7c7c98f4d951' },
-  { country: 'South Africa', continent: 'Africa', image: 'https://images.unsplash.com/photo-1505761937142-2f72ecf7c1f5' },
-  { country: 'Austria', continent: 'Europe', image: 'https://images.unsplash.com/photo-1534349762230-401a206d09d4' },
-  { country: 'Philippines', continent: 'Asia', image: 'https://images.unsplash.com/photo-1583215302207-7924c7c2594f' },
+  {
+    country: 'Japan',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/1131297221/photo/cherry-blossoms-and-mount-fuji.jpg'
+  },
+  {
+    country: 'France',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/eiffel-tower-paris.jpg'
+  },
+  {
+    country: 'Thailand',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/1146517116/photo/wat-arun-temple-bangkok-thailand.jpg'
+  },
+  {
+    country: 'United States',
+    continent: 'North America',
+    image: 'https://media.istockphoto.com/id/157482029/photo/statue-of-liberty-new-york.jpg'
+  },
+  {
+    country: 'Italy',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/colosseum-rome-italy.jpg'
+  },
+  {
+    country: 'Turkey',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/cappadocia-turkey.jpg'
+  },
+  {
+    country: 'Mexico',
+    continent: 'North America',
+    image: 'https://media.istockphoto.com/id/157482029/photo/chichen-itza-mexico.jpg'
+  },
+  {
+    country: 'Spain',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/sagrada-familia-barcelona-spain.jpg'
+  },
+  {
+    country: 'Germany',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/brandenburg-gate-berlin-germany.jpg'
+  },
+  {
+    country: 'United Kingdom',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/big-ben-london-uk.jpg'
+  },
+  {
+    country: 'Australia',
+    continent: 'Oceania',
+    image: 'https://media.istockphoto.com/id/157482029/photo/sydney-opera-house-australia.jpg'
+  },
+  {
+    country: 'China',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/157482029/photo/great-wall-of-china.jpg'
+  },
+  {
+    country: 'Canada',
+    continent: 'North America',
+    image: 'https://media.istockphoto.com/id/157482029/photo/moraine-lake-banff-national-park-canada.jpg'
+  },
+  {
+    country: 'Indonesia',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/157482029/photo/borobudur-temple-indonesia.jpg'
+  },
+  {
+    country: 'South Korea',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/157482029/photo/gyeongbokgung-palace-seoul-south-korea.jpg'
+  },
+  {
+    country: 'Vietnam',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/157482029/photo/ha-long-bay-vietnam.jpg'
+  },
+  {
+    country: 'Singapore',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/157482029/photo/marina-bay-sands-singapore.jpg'
+  },
+  {
+    country: 'Brazil',
+    continent: 'South America',
+    image: 'https://media.istockphoto.com/id/157482029/photo/christ-the-redeemer-rio-de-janeiro-brazil.jpg'
+  },
+  {
+    country: 'India',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/157482029/photo/taj-mahal-agra-india.jpg'
+  },
+  {
+    country: 'Netherlands',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/windmills-netherlands.jpg'
+  },
+  {
+    country: 'Greece',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/parthenon-athens-greece.jpg'
+  },
+  {
+    country: 'Malaysia',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/157482029/photo/petronas-twin-towers-kuala-lumpur-malaysia.jpg'
+  },
+  {
+    country: 'Egypt',
+    continent: 'Africa',
+    image: 'https://media.istockphoto.com/id/157482029/photo/pyramids-of-giza-egypt.jpg'
+  },
+  {
+    country: 'Russia',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/saint-basils-cathedral-moscow-russia.jpg'
+  },
+  {
+    country: 'Portugal',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/belem-tower-lisbon-portugal.jpg'
+  },
+  {
+    country: 'United Arab Emirates',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/157482029/photo/burj-khalifa-dubai-uae.jpg'
+  },
+  {
+    country: 'Morocco',
+    continent: 'Africa',
+    image: 'https://media.istockphoto.com/id/157482029/photo/koutoubia-mosque-marrakech-morocco.jpg'
+  },
+  {
+    country: 'Switzerland',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/matterhorn-mountain-switzerland.jpg'
+  },
+  {
+    country: 'South Africa',
+    continent: 'Africa',
+    image: 'https://media.istockphoto.com/id/157482029/photo/table-mountain-cape-town-south-africa.jpg'
+  },
+  {
+    country: 'Austria',
+    continent: 'Europe',
+    image: 'https://media.istockphoto.com/id/157482029/photo/schonbrunn-palace-vienna-austria.jpg'
+  },
+  {
+    country: 'Philippines',
+    continent: 'Asia',
+    image: 'https://media.istockphoto.com/id/157482029/photo/mayon-volcano-philippines.jpg'
+  }
 ];
+
+
+
+
 
 const PlaneTickets = () => {
   const [selectedContinent, setSelectedContinent] = useState('All');

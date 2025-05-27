@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import finlandImage from '../assets/packages-landing/finland.jpg';
 import shanghaiImage from '../assets/packages-landing/shanghai.jpg';
 import norwayImage from '../assets/packages-landing/norway.jpg';
@@ -35,8 +37,13 @@ function SpecialOffers() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {offers.map((offer, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 0.7, delay: index * 0.1 }}
               className={`relative group col-span-1 sm:col-span-1 ${offer.span || ''}`}
             >
               <img
@@ -70,7 +77,7 @@ function SpecialOffers() {
                 <h3 className="text-lg font-semibold leading-tight">{offer.title}</h3>
                 <p className="text-sm">{offer.tours} Tours</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
