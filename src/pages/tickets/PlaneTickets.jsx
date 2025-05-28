@@ -7,165 +7,151 @@ import '../../index.css';
 
 const destinations = [
   {
+    country: 'Indonesia',
+    continent: 'Asia',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447359/indonesia_ue5iez.jpg'
+  },
+  {
     country: 'Japan',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/1131297221/photo/cherry-blossoms-and-mount-fuji.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447350/japan_xjzkel.jpg'
   },
   {
     country: 'France',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/eiffel-tower-paris.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447732/france_zunhdc.jpg'
   },
   {
     country: 'Thailand',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/1146517116/photo/wat-arun-temple-bangkok-thailand.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447544/thailand_muyp4a.jpg'
   },
   {
     country: 'United States',
     continent: 'North America',
-    image: 'https://media.istockphoto.com/id/157482029/photo/statue-of-liberty-new-york.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447174/america_q7b6yr.jpg'
   },
   {
     country: 'Italy',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/colosseum-rome-italy.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447638/italy_gb1qfp.jpg'
   },
   {
     country: 'Turkey',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/cappadocia-turkey.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447081/turkiye_odo22u.jpg'
   },
   {
-    country: 'Mexico',
-    continent: 'North America',
-    image: 'https://media.istockphoto.com/id/157482029/photo/chichen-itza-mexico.jpg'
+    country: 'Netherland',
+    continent: 'Europe',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447177/netherland_e4hiof.jpg'
   },
   {
     country: 'Spain',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/sagrada-familia-barcelona-spain.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447465/spain_visjes.jpg'
   },
   {
     country: 'Germany',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/brandenburg-gate-berlin-germany.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447491/german_veoski.jpg'
   },
   {
     country: 'United Kingdom',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/big-ben-london-uk.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447429/uk_qii7in.jpg'
   },
   {
     country: 'Australia',
     continent: 'Oceania',
-    image: 'https://media.istockphoto.com/id/157482029/photo/sydney-opera-house-australia.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447187/australia_fivzv5.jpg'
   },
   {
     country: 'China',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/157482029/photo/great-wall-of-china.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447236/china_rlx6zr.jpg'
   },
   {
     country: 'Canada',
     continent: 'North America',
-    image: 'https://media.istockphoto.com/id/157482029/photo/moraine-lake-banff-national-park-canada.jpg'
-  },
-  {
-    country: 'Indonesia',
-    continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/157482029/photo/borobudur-temple-indonesia.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447903/canada_krikkh.jpg'
   },
   {
     country: 'South Korea',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/157482029/photo/gyeongbokgung-palace-seoul-south-korea.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447986/korea_oigiqn.jpg'
   },
   {
     country: 'Vietnam',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/157482029/photo/ha-long-bay-vietnam.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748447809/vietnam_nxtvab.jpg'
   },
   {
     country: 'Singapore',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/157482029/photo/marina-bay-sands-singapore.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448100/singapore_q47xgp.jpg'
   },
   {
     country: 'Brazil',
     continent: 'South America',
-    image: 'https://media.istockphoto.com/id/157482029/photo/christ-the-redeemer-rio-de-janeiro-brazil.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448792/brazil_i26exz.jpg'
   },
   {
     country: 'India',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/157482029/photo/taj-mahal-agra-india.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448417/india_wzmo0o.jpg'
   },
   {
-    country: 'Netherlands',
-    continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/windmills-netherlands.jpg'
+    country: 'Mexico',
+    continent: 'North America',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448228/mexico_ssqiog.jpg'
   },
   {
     country: 'Greece',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/parthenon-athens-greece.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448472/greece_akyzjf.jpg'
   },
   {
     country: 'Malaysia',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/157482029/photo/petronas-twin-towers-kuala-lumpur-malaysia.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448107/malaysia_zc7wge.jpg'
   },
   {
     country: 'Egypt',
     continent: 'Africa',
-    image: 'https://media.istockphoto.com/id/157482029/photo/pyramids-of-giza-egypt.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448528/egypt_ndgbgz.jpg'
   },
   {
     country: 'Russia',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/saint-basils-cathedral-moscow-russia.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448874/russia_mgm3oz.jpg'
   },
   {
     country: 'Portugal',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/belem-tower-lisbon-portugal.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748449023/portugal_cva58m.jpg'
   },
   {
     country: 'United Arab Emirates',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/157482029/photo/burj-khalifa-dubai-uae.jpg'
-  },
-  {
-    country: 'Morocco',
-    continent: 'Africa',
-    image: 'https://media.istockphoto.com/id/157482029/photo/koutoubia-mosque-marrakech-morocco.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748449116/arab_ycism5.jpg'
   },
   {
     country: 'Switzerland',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/matterhorn-mountain-switzerland.jpg'
-  },
-  {
-    country: 'South Africa',
-    continent: 'Africa',
-    image: 'https://media.istockphoto.com/id/157482029/photo/table-mountain-cape-town-south-africa.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448973/switzerland_pidevy.jpg'
   },
   {
     country: 'Austria',
     continent: 'Europe',
-    image: 'https://media.istockphoto.com/id/157482029/photo/schonbrunn-palace-vienna-austria.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748449149/austria_w6hiqf.jpg'
   },
   {
     country: 'Philippines',
     continent: 'Asia',
-    image: 'https://media.istockphoto.com/id/157482029/photo/mayon-volcano-philippines.jpg'
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748448830/phillipines_vdeeuw.jpg'
   }
 ];
-
-
-
-
 
 const PlaneTickets = () => {
   const [selectedContinent, setSelectedContinent] = useState('All');
@@ -226,7 +212,8 @@ const PlaneTickets = () => {
                 className="bg-white border-4 border-white rounded-xl shadow-lg overflow-hidden w-full max-w-[260px] transition hover:scale-[1.02] duration-300"
               >
                 <img
-                  src={`${tour.image}?auto=format&fit=crop&w=600&q=80`}
+                  loading="lazy"
+                  src={`${tour.image}?auto=format&fit=crop&w=800&dpr=2&q=90`}
                   alt={tour.country}
                   className="w-full h-40 object-cover"
                 />

@@ -76,13 +76,13 @@ const priceMap = {
   'Horizon Ferry-Singapore-One Way-All Passports': 530000,
   'Horizon Ferry-Singapore-Round Trip-Indonesian Only': 760000,
   'Horizon Ferry-Singapore-Round Trip-All Passports': 960000,
-  'Marine Hawk Ferry-Malaysia-One Way-All': 400000,
+  'Marine Hawk Ferry-Malaysia-One Way-All': 395000,
   'Marine Hawk Ferry-Malaysia-Round Trip-All': 565000,
-  'Putri Anggreni Ferry-Malaysia-One Way-All': 400000,
+  'Putri Anggreni Ferry-Malaysia-One Way-All': 395000,
   'Putri Anggreni Ferry-Malaysia-Round Trip-All': 595000,
-  'Dolphin Ferry-Malaysia-One Way-All': 400000,
-  'Dolphin Ferry-Malaysia-Round Trip-All': 565000,
-  'Citra Indomas Ferry-Malaysia-One Way-All': 400000,
+  'Dolphin Ferry-Malaysia-One Way-All': 385000,
+  'Dolphin Ferry-Malaysia-Round Trip-All': 575000,
+  'Citra Indomas Ferry-Malaysia-One Way-All': 395000,
   'Citra Indomas Ferry-Malaysia-Round Trip-All': 565000,
 };
 

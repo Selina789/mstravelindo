@@ -30,7 +30,7 @@ const About = () => {
             <div className="aspect-video w-full rounded-md overflow-hidden">
               <iframe
                 className="w-full h-full"
-                src=""
+                src="https://player.cloudinary.com/embed/?cloud_name=ddotc6ecd&public_id=kztadaazt7drvefonezs&profile=cld-default&poster_options[public_id]=Untitled_design_2_cqr55m"
                 title="MST Tour Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
