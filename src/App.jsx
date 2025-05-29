@@ -26,6 +26,11 @@ import PlaneTickets from "./pages/tickets/PlaneTickets";
 import VisaOthers from "./pages/others/VisaOthers";
 import RentalOthers from "./pages/others/RentalOthers";
 
+// Contacts
+import ContactPage from "./pages/ContactPage";
+
+import FloatingWhatsapp from './components/FloatingWhatsapp';
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -71,6 +76,9 @@ const AnimatedRoutes = () => {
         <Route path="/others" element={<PageWrapper><OthersPage /></PageWrapper>} />
         <Route path="/others/visa" element={<PageWrapper><VisaOthers /></PageWrapper>} />
         <Route path="/others/rental" element={<PageWrapper><RentalOthers /></PageWrapper>} />
+
+        {/* Contacts */}
+        <Route path="/contacts" element={<PageWrapper><ContactPage /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );
@@ -81,6 +89,7 @@ const App = () => (
     <ScrollToTop />
     <NavBar />
     <AnimatedRoutes />
+    <FloatingWhatsapp />
   </Router>
 );
 

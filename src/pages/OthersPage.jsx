@@ -12,7 +12,7 @@ const packages = [
     link: "/others/visa",
   },
   {
-    region: 'RENTAL KENDARAAN',
+    region: 'CAR RENTALS',
     image: rentalPic,
     link: "/others/rental",
   }

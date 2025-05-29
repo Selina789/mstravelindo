@@ -58,7 +58,7 @@ const Navbar = () => {
           </Link>
           <div className="navbar-dropdown absolute bg-white text-black shadow-lg rounded-md mt-3 w-40">
             <Link to="/tickets/ferry" className="block px-4 py-2 font-bold hover:bg-gray-100">FERRY</Link>
-            <Link to="/tickets/plane" className="block px-4 py-2 font-bold hover:bg-gray-100">PESAWAT</Link>
+            <Link to="/tickets/plane" className="block px-4 py-2 font-bold hover:bg-gray-100">AIRPLANES</Link>
           </div>
         </div>
 
@@ -68,16 +68,17 @@ const Navbar = () => {
           </Link>
           <div className="navbar-dropdown absolute bg-white text-black shadow-lg rounded-md mt-3 w-40">
             <Link to="/others/visa" className="block px-4 py-2 font-bold hover:bg-gray-100">VISA</Link>
-            <Link to="/others/rental" className="block px-4 py-2 font-bold hover:bg-gray-100">KENDARAAN</Link>
+            <Link to="/others/rental" className="block px-4 py-2 font-bold hover:bg-gray-100">VEHICLES</Link>
           </div>
         </div>
 
-        <a href="https://wa.me/6282170824534" target="_blank" rel="noopener noreferrer"
-          className={`slowmo-button-hover font-bold py-3 px-6 text-base transition tracking-wide animation sm:text-xs md:text-ms lg:text-lg md:px-4 md:py-2
-            ${isNotLanding ? 'bg-white text-rose-500 hover:bg-red-600 hover:text-white'
-            : (scrolled ? 'bg-white text-rose-500 hover:bg-red-600 hover:text-white': 'bg-red-400 text-white hover:bg-red-600')}`}>
-          CONTACT US
-        </a>
+          <Link to="/contacts"
+            className={`slowmo-button-hover font-bold py-3 px-6 text-base transition tracking-wide animation sm:text-xs md:text-ms lg:text-lg md:px-4 md:py-2
+              ${isNotLanding ? 'bg-white text-rose-500 hover:bg-red-600 hover:text-white'
+              : (scrolled ? 'bg-white text-rose-500 hover:bg-red-600 hover:text-white' : 'bg-red-400 text-white hover:bg-red-600')}`}>
+            OUR CONTACT
+          </Link>
+
       </div>
 
       {/* Mobile Navbar */}

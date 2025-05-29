@@ -51,10 +51,9 @@ const About = () => {
               TRUSTED SERVICE SINCE 2019
             </p>
             <hr className="mt-0 mb-1 border-t border-red-500 border-2 w-28 mx-auto md:mx-0" />
-            <p className="text-sm text-gray-700 mb-4 leading-[2.1]">
-              Agen tour & travel yang melayani penjualan tiket pesawat dan paket wisata
-              dalam dan luar negeri, pemesanan hotel dalam dan luar negeri, hingga jasa
-              pengurusan dokumen perjalanan.
+            <p className="text-sm text-gray-700 mb-4 leading-[1.7] text-justify">
+              Tour & travel agent that provides airplane and ferry tickets, tour packages for domestic 
+              and international travel, hotel reservations, and travel document processing services.
             </p>
             <a href="https://wa.me/6282170824534" target="_blank" rel="noopener noreferrer">
               <button className="mt-2 slowmo-link-hover font-bold bg-red-400 hover:bg-red-600 text-white text-sm py-2 px-4 rounded">
@@ -65,7 +64,7 @@ const About = () => {
         </div>
 
         <div className="text-center mb-6 mt-20">
-          <span className="bg-red-400 text-white px-4 py-2 text-sm font-semibold rounded mt-20">
+          <span className="bg-red-400 text-white px-7 py-2 text-sm font-semibold rounded mt-20">
             OUR SERVICES
           </span>
         </div>

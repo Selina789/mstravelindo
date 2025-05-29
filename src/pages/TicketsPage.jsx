@@ -12,7 +12,7 @@ const packages = [
     link: "/tickets/ferry",
   },
   {
-    region: 'PESAWAT',
+    region: 'AIRPLANES',
     image: pesawatPic,
     link: "/tickets/plane",
   }
