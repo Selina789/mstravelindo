@@ -23,13 +23,13 @@ const TourList = ({ title, subtitle, tours }) => {
   return (
     <div className="min-h-screen bg-white px-4 py-8 sm:px-6 lg:px-8 mt-20 flex flex-col items-center">
       <h1 className="text-4xl font-bold text-red-600 text-center mt-10">{title}</h1>
-      {subtitle && <p className="text-red-400 italic text-center mb-6 mt-3">{subtitle}</p>}
+      {subtitle && <p className="text-red-500 italic text-center mb-6 mt-3">{subtitle}</p>}
 
       {/* Filter Dropdown */}
       <div className="relative mb-8">
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
-          className="flex items-center px-4 py-2 text-sm font-medium text-white bg-red-400 hover:bg-red-500 rounded shadow"
+          className="slowmo-link-hover flex items-center px-4 py-2 text-sm font-medium text-white bg-red-500 hover:bg-red-600 rounded shadow"
         >
           <FontAwesomeIcon icon={faFilter} className="slowmo-link-hover mr-2" />
           Filter Duration
@@ -78,7 +78,7 @@ const TourList = ({ title, subtitle, tours }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="slowmo-link-hover bg-red-300 hover:bg-red-400 text-white text-xs px-3 py-1 rounded-full font-semibold">
+                  <button className="slowmo-link-hover bg-red-400 hover:bg-red-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
                     INQUIRE
                   </button>
                 </a>

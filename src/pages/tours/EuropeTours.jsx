@@ -93,7 +93,7 @@ const EuropeTours = () => (
     {/* Main Content */}
     <TourList
       title="EUROPE"
-      subtitle="(the continent of contrasts)"
+      subtitle="(Classic charm meets modern marvels)"
       tours={europeTours}
     />
     <Footer />

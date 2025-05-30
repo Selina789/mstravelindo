@@ -2,21 +2,24 @@ import { useState } from 'react';
 import whatsappIcon from '../assets/whatsapp-icon.png';
 
 const admins = [
-  { name: 'Admin 1', number: '6281234567890' },
-  { name: 'Admin 2', number: '6289876543210' },
-  { name: 'Admin 3', number: '6281112223334' },
+  { name: 'Admin', number: '6282170824534' },
+  { name: 'Yenny', number: '6281266489200' },
+  { name: 'Ependi', number: '6285224918888' },
 ];
 
 const FloatingWhatsapp = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-0 right-2 md:bottom-6 md:right-6 z-50 flex flex-col items-center">
-      {/* Dropdown with slower slide-up animation */}
+    <div className="fixed bottom-0 right-2 md:bottom-3 md:right-6 z-[9999] flex flex-col items-center">
+      {/* Dropdown with animation but no blocking when closed */}
       <div
-        className={`flex flex-col font-bold items-center space-y-4 mb-4 mr-2 transition-all duration-700 ease-out ${
-          open ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6 pointer-events-none'
-        }`}
+        className={`
+          flex flex-col font-bold items-center space-y-4 mb-4 mr-2
+          transition-all duration-700 ease-out
+          ${open ? 'opacity-100 translate-y-0 pointer-events-auto relative' : 'opacity-0 translate-y-6 pointer-events-none absolute h-0 overflow-hidden'}
+        `}
+        style={{ minWidth: 'max-content' }}
       >
         {admins.map((admin, idx) => (
           <a
@@ -31,12 +34,12 @@ const FloatingWhatsapp = () => {
         ))}
       </div>
 
-      {/* Image-only Floating Button */}
+      {/* Floating WhatsApp Button */}
       <button onClick={() => setOpen(!open)} className="p-0 m-0 bg-transparent border-none">
         <img
           src={whatsappIcon}
           alt="WhatsApp"
-          className="w-[150px] h-[150px] cursor-pointer hover:scale-110 transition-transform duration-200"
+          className="w-[130px] h-[130px] md:w-[150px] md:h-[150px] cursor-pointer hover:scale-110 transition-transform duration-200"
         />
       </button>
     </div>

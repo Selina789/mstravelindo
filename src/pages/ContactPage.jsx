@@ -15,7 +15,7 @@ const ContactPage = () => {
   <>
     <div className="max-w-4xl mx-auto px-6 pt-12 pb-6 text-center mt-[100px] text-red-600">
       {/* Company Title */}
-      <h1 className="text-4xl md:text-5xl font-extrabold mb-3 drop-shadow-md">MSTravelindo</h1>
+      <h1 className="text-4xl md:text-5xl font-extrabold mb-3">MSTravelindo</h1>
       <a href="" className="font-bold text-lg hover:text-red-800 slowmo-link-hover explore-link">(PT. Mitra Sukses Travelindo)</a>
 
       <hr className="mt-8 border-red-600 w-full md:w-[350px] mx-auto" />
@@ -32,7 +32,7 @@ const ContactPage = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://facebook.com/mstravelindo"
+            href="https://facebook.com/mstbatam"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 slowmo-link-hover text-red-500 hover:text-red-700 drop-shadow-[0_0_1px_rgba(255,129,129,0.8)]"

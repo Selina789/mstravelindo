@@ -93,7 +93,7 @@ const IndonesiaTours = () => (
     {/* Main Content */}
     <TourList
       title="INDONESIA"
-      subtitle="(the continent of contrasts)"
+      subtitle="(An island paradise rich in culture and natural beauty)"
       tours={indonesiaTours}
     />
     <Footer />

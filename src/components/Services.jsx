@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../index.css";
 import carRental from "../assets/logo-services/car-rental.png";
-import hotelLogo from "../assets/logo-services/hotel.png";
-import documentsLogo from "../assets/logo-services/international-passport.png";
-import packageTour from "../assets/logo-services/itinerary.png";
-import ticketLogo from "../assets/logo-services/ticket.png";
+import hotelLogo from "../assets/logo-services/hotel2.png";
+import documentsLogo from "../assets/logo-services/international-passport2.png";
+import packageTour from "../assets/logo-services/itinerary2.png";
+import ticketLogo from "../assets/logo-services/ticket2.png";
 
 const servicesData = [
   {
@@ -58,7 +58,7 @@ function App() {
 
   return (
     <div className="container mx-auto text-center my-12 mt-20 mb-20">
-      <h1 className="text-4xl font-bold text-red-500 mb-7">OUR SERVICES</h1>
+      <h1 className="text-4xl font-bold text-red-600 mb-7">OUR SERVICES</h1>
       <p className="text-base lg:text-lg text-gray-700 mb-6 m-5 sm:m-0">
         Various services to make your travelling life easy and happier, don't miss out on your trip!
       </p>

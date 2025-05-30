@@ -23,7 +23,7 @@ const rentalData = [
     interland: 900000,
   },
   {
-    name: '12-Seat Van',
+    name: 'Hiace',
     type: '12-Seat Van',
     image: vanImg,
     cityTour: 800000,

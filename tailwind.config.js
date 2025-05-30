@@ -2,11 +2,18 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'lg-mid': { min: '1024px', max: '1270px' }
+        'lg-mid': { min: '1024px', max: '1270px' },
+      },
+      fontFamily: {
+        quicksand: ['Quicksand', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        baloo: ['"Baloo 2"', 'cursive'],
+        lilita: ['"Lilita One"', 'cursive'],
+        caveat: ['Caveat', 'cursive'],
       },
     },
   },
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // make sure all your source files are listed
+    "./src/**/*.{js,jsx,ts,tsx}", // include all React files
   ],
 };

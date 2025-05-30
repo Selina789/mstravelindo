@@ -40,26 +40,29 @@ const Landing = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center text-white h-full px-4">
-        <h1 className="landing-headline text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 mt-0 md:mt-5 pt-10">
-          TRAVEL AROUND <br /> THE WORLD
+        <h1 className="font-lilita landing-headline text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 mt-0 md:mt-5 pt-10 text-center">
+          <span className="block">ADVENTURE AWAITS</span>
+          <span className="block mt-0 md:mt-6">LET’S GO EXPLORE!</span>
         </h1>
-        <p className="landing-headline text-xl sm:text-xl md:text-2xl lg:text-3xl mb-6 font-medium tracking-wide drop-shadow-lg landing-subline">
-          TRIP WITHOUT HASSLE, ONLY WITH MSTRAVELINDO
+
+        <p className="font-quicksand landing-headline text-lg sm:text-lg md:text-xl lg:text-2xl mb-6 font-medium tracking-wide drop-shadow-lg landing-subline">
+          Pack your bags, chase the sun, and make memories with MSTravelindo 🌞✈️
         </p>
-        <button className="slowmo-button-hover font-bold bg-red-400 text-white py-3 px-8 rounded-lg text-lg sm:text-xl md:text-2xl hover:bg-red-600 transition tracking-wider">
+
+        <button className="slowmo-button-hover font-bold bg-red-500 text-white py-3 px-8 rounded-lg text-lg sm:text-xl md:text-2xl hover:bg-red-700 transition tracking-wider">
           PLAN YOUR TRIP
         </button>
       </div>
 
       {/* Left and Right Arrows */}
       <div
-        className="absolute top-1/2 transform -translate-y-1/2 left-5 text-white text-3xl cursor-pointer z-20"
+        className="absolute top-1/2 transform left-5 -translate-y-1/2 left-5 text-white text-md md:text-3xl cursor-pointer z-20"
         onClick={goToPrevious}
       >
         ❮
       </div>
       <div
-        className="absolute top-1/2 transform -translate-y-1/2 right-5 text-white text-3xl cursor-pointer z-20"
+        className="absolute top-1/2 transform right-5 -translate-y-1/2 right-5 text-white text-md md:text-3xl cursor-pointer z-20"
         onClick={goToNext}
       >
         ❯

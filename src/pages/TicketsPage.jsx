@@ -2,7 +2,7 @@ import React from 'react';
 import ferryPic from  '../assets/tickets-img/ferry.jpg';
 import pesawatPic from  '../assets/tickets-img/pesawat.jpg';
 import Footer from "../components/Footer";
-import ticketLogo from '../assets/logo-services/ticket.png';
+import ticketLogo from '../assets/logo-services/ticket2.png';
 import { Link } from 'react-router-dom';
 
 const packages = [

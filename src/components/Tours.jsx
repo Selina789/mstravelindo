@@ -105,7 +105,7 @@ function Tours() {
         <div className="w-[40px] sm:w-[60px]">
           <button
             onClick={prevSlide}
-            className="bg-red-500 text-white p-2 sm:p-4 rounded-full opacity-50 hover:opacity-100 transition-opacity"
+            className="slowmo-link-hover bg-red-500 text-white p-2 sm:p-4 rounded-full opacity-50 hover:opacity-100 transition-opacity"
           >
             &#10094;
           </button>
@@ -126,7 +126,7 @@ function Tours() {
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="w-full h-[300px] sm:h-[300px] md:h-[400px] lg:h-[400px] object-cover rounded-lg border-2 border-red-300 p-0 lg:p-1"
+                    className="w-full h-[300px] sm:h-[300px] md:h-[400px] lg:h-[400px] object-cover rounded-lg border-2 border-red-400 p-0 lg:p-1"
                   />
                 </a>
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-black bg-opacity-50 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
@@ -145,7 +145,7 @@ function Tours() {
         <div className="w-[40px] sm:w-[60px] text-right">
           <button
             onClick={nextSlide}
-            className="bg-red-500 text-white p-2 sm:p-4 rounded-full opacity-50 hover:opacity-100 transition-opacity"
+            className="slowmo-link-hover bg-red-500 text-white p-2 sm:p-4 rounded-full opacity-50 hover:opacity-100 transition-opacity"
           >
             &#10095;
           </button>
