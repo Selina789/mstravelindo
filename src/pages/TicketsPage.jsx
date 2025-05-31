@@ -21,7 +21,7 @@ const packages = [
 const Tours = () => {
   return (
   <>
-    <section className="py-8 px-4 text-center mt-20">
+    <section className="font-hammersmith py-8 px-4 text-center mt-20">
       <div className="flex items-center justify-center mt-8 mb-4">
         <h2 className="text-2xl sm:text-3xl font-bold text-red-600 ml-4">TICKETS</h2>
         <img src={ticketLogo} alt="Logo" className="slowmo-link-hover hover:scale-105 w-8 h-8 sm:w-10 sm:h-10 ml-4 pb-1" />

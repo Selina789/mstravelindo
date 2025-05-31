@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <>
-      <section className="w-full px-4 py-12 max-w-6xl mx-auto mt-32 text-center">
+      <section className="font-hammersmith w-full px-4 py-12 max-w-6xl mx-auto mt-32 text-center">
         {/* --- Your existing content unchanged --- */}
         {/* Top Section */}
         <div className="grid md:grid-cols-2 items-center gap-12 mb-16">

@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import chinaImage from '../assets/tours-landing/china-potrait.jpg';
 import parisImage from '../assets/tours-landing/paris-potrait.jpg';
 import singaporeImage from '../assets/tours-landing/singapore-potrait.jpg';
+import thailandImage from '../assets/tours-landing/thailand-potrait.jpg';
+import taiwanImage from '../assets/tours-landing/taiwan-potrait.jpg';
+import malaysiaImage from '../assets/tours-landing/malaysia-potrait.jpg';
+import baliImage from '../assets/tours-landing/bali-potrait.jpg';
+import samosirImage from '../assets/tours-landing/samosir-potrait.jpg';
+import koreaImage from '../assets/tours-landing/korea-potrait.jpg';
 import tourLogo from '../assets/tours-landing/tour-logo.jpg';
 import '../index.css';
 
@@ -22,29 +28,34 @@ const slides = [
     description: 'Take a stroll through the stunning Gardens by the Bay!',
   },
   {
-    image: parisImage,
-    title: 'Paris City Tour',
-    description: 'Discover the iconic landmarks of Paris, including the Eiffel Tower!',
+    image: thailandImage,
+    title: 'Thailand Temple Tour',
+    description: 'Wander through golden temples and vibrant floating markets in Bangkok!',
   },
   {
-    image: singaporeImage,
-    title: 'Singapore Garden Tour',
-    description: 'Take a stroll through the stunning Gardens by the Bay!',
+    image: taiwanImage,
+    title: 'Taiwan Discovery Tour',
+    description: 'Explore vibrant streets, tasty snacks, and stunning mountain views!',
   },
   {
-    image: chinaImage,
-    title: 'Chinatown Tour',
-    description: 'Explore the rich cultural heritage of Chinatown!',
+    image: malaysiaImage,
+    title: 'Malaysia City Lights Tour',
+    description: 'Marvel at the Petronas Towers and savor delicious street food in Kuala Lumpur!',
   },
   {
-    image: singaporeImage,
-    title: 'Singapore Garden Tour',
-    description: 'Take a stroll through the stunning Gardens by the Bay!',
+    image: baliImage,
+    title: 'Bali Beach Escape',
+    description: 'Soak up the sun on Bali’s stunning beaches and discover sacred temples!',
   },
   {
-    image: chinaImage,
-    title: 'Chinatown Tour',
-    description: 'Explore the rich cultural heritage of Chinatown!',
+    image: samosirImage,
+    title: 'Samosir Lake Getaway',
+    description: 'Unwind by the crystal-clear waters of Lake Toba and explore Batak culture!',
+  },
+  {
+    image: koreaImage,
+    title: 'Korea Culture & K-Drama Tour',
+    description: 'Walk the vibrant streets of Seoul and visit famous K-drama spots!',
   }
 ];
 
@@ -87,7 +98,7 @@ function Tours() {
   };
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto mt-20 mb-20 px-7 sm:px-0">
+    <div className="font-hammersmith relative w-full max-w-7xl mx-auto mt-20 mb-20 px-7 sm:px-0">
       <div className="flex items-center sm:justify-start mb-4">
         <div className="w-10 h-[3px] bg-red-600 rounded-xl" />
         <h2 className="text-2xl sm:text-3xl font-bold text-red-600 ml-4">PACKAGE TOUR</h2>

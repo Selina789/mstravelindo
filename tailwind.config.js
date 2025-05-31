@@ -10,6 +10,7 @@ module.exports = {
         baloo: ['"Baloo 2"', 'cursive'],
         lilita: ['"Lilita One"', 'cursive'],
         caveat: ['Caveat', 'cursive'],
+        hammersmith: ['"Hammersmith One"', 'sans-serif'],
       },
     },
   },

@@ -7,74 +7,53 @@ import '../../index.css';
 
 const asiaTours = [
   {
-    title: 'Korea Seoul-Busan',
-    departureDate: '2025-06-15',
-    duration: '7 Days',
-    price: '12,500,000',
-    image: 'https://cdn.pixabay.com/photo/2019/03/30/10/59/tokyo-4093741_1280.jpg',
-  },
-  {
-    title: 'Bali Paradise',
-    departureDate: '2025-07-10',
-    duration: '5 Days',
-    price: '9,200,000',
-    image: 'https://cdn.pixabay.com/photo/2017/01/20/00/30/bali-1993704_1280.jpg',
-  },
-  {
-    title: 'Vietnam',
-    departureDate: '2025-08-05',
-    duration: '6 Days',
-    price: '11,800,000',
-    image: 'https://cdn.pixabay.com/photo/2016/11/18/16/15/seoul-1834263_1280.jpg',
-  },
-  {
-    title: 'Bangkok Adventure',
-    departureDate: '2025-09-12',
-    duration: '4 Days',
-    price: '10,000,000',
-    image: 'https://cdn.pixabay.com/photo/2016/11/29/09/32/bangkok-1868450_1280.jpg',
-  },
-  {
-    title: 'Hanoi Heritage',
-    departureDate: '2025-10-20',
-    duration: '5 Days',
-    price: '9,500,000',
-    image: 'https://cdn.pixabay.com/photo/2019/03/22/14/09/hanoi-4072175_1280.jpg',
-  },
-  {
-    title: 'Singapore Skyline',
-    departureDate: '2025-11-15',
-    duration: '3 Days',
-    price: '13,000,000',
-    image: 'https://cdn.pixabay.com/photo/2015/09/18/11/36/singapore-944406_1280.jpg',
-  },
-  {
-    title: 'Kathmandu Trek',
-    departureDate: '2025-12-05',
+    title: 'Taiwan Alishan',
+    departureDate: 'Sep-Nov 2025',
     duration: '8 Days',
-    price: '14,200,000',
-    image: 'https://cdn.pixabay.com/photo/2018/03/01/09/39/kathmandu-3198630_1280.jpg',
+    price: '15,070,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748713490/taiwan_akdmhh.jpg',
   },
   {
-    title: 'Jaipur Journey',
-    departureDate: '2026-01-10',
-    duration: '6 Days',
-    price: '10,800,000',
-    image: 'https://cdn.pixabay.com/photo/2017/01/20/00/30/jaipur-1993703_1280.jpg',
-  },
-  {
-    title: 'Shanghai Nights',
-    departureDate: '2026-02-18',
+    title: 'Phu Quoc Vietnam',
+    departureDate: 'Jun-Oct 2025',
     duration: '5 Days',
-    price: '12,300,000',
-    image: 'https://cdn.pixabay.com/photo/2016/11/29/09/32/shanghai-1868451_1280.jpg',
+    price: '13,800,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748713631/vietnam_lqhczn.jpg',
+  },
+  {
+    title: 'Northern Xinjiang',
+    departureDate: '09-21 Sep 2025',
+    duration: '13 Days',
+    price: '40,450,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748713729/xinjiang_kizbum.jpg',
+  },
+  {
+    title: 'Hainan Sanya',
+    departureDate: 'June-Aug 2025',
+    duration: '5 Days',
+    price: '12,700,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748713806/hainan_v7qs4t.jpg',
+  },
+  {
+    title: 'Busan Seoul',
+    departureDate: '22 & 28 June 2025',
+    duration: '8 Days',
+    price: '19,800,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748714088/busan_q94igs.jpg',
+  },
+  {
+    title: 'Chongqing Tour',
+    departureDate: 'June 2025',
+    duration: '8 Days',
+    price: '20,150,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748713921/chongqing_mvbccx.jpg',
   },
 ];
 
 const AsiaTours = () => (
   <>
     {/* Back Button outside layout flow */}
-    <div className="relative  mt-10 top-20 left-5 lg:left-20 z-50">
+    <div className="relative  mt-10 top-20 pl-5 lg:pl-20">
       <Link
         to="/"
         className="flex items-center text-base lg:text-xl group hover:text-red-600"

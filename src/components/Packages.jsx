@@ -24,12 +24,12 @@ function SpecialOffers() {
     <div className="package-bg width-full p-2">
       <div className="max-w-7xl mx-auto mt-8 mb-10 px-4">
         <div className="mb-6 text-center items-center justify-center">
-          <div className="flex justify-center items-center mb-3 text-3xl md:text-4xl lg:text-5xl ">
+          <div className="font-hammersmith flex justify-center items-center mb-3 text-3xl md:text-4xl lg:text-5xl ">
             <img src={leftLogo} alt="Left image" className="logo-left-right mr-4 sm:mr-3" />
             <h2 className="font-bold offer-title">SPECIAL OFFERS & PROMOS</h2>
             <img src={rightLogo} alt="Right image" className="logo-left-right ml-4 sm:ml-3" />
           </div>
-          <p className="text-lg text-gray-600 mt-0 offer-desc">
+          <p className="font-hammersmith text-lg text-gray-600 mt-0 offer-desc">
             Exclusive promotions and special offers that last for a period of time,
             <span className="block">don't miss out on your dream vacation!</span>
           </p>

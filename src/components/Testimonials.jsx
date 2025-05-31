@@ -51,7 +51,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="font-hammersmith flex flex-col justify-center items-center">
       {/* Section Title */}
       <div className="mb-20 mt-10">
         <div className="text-center mb-12 flex items-center justify-center align-center space-x-4">
@@ -82,8 +82,8 @@ const Testimonials = () => {
       </div>
 
       {/* Why Choose Us Section with Pink Background */}
-      <div className="bg-pink-50 w-full py-12 mb-10" ref={sectionRef}>
-        <h3 className="text-3xl font-bold text-center mb-10 testimonials-text">Why Choose Us? <span role="img" aria-label="Globe">🌍</span></h3>
+      <div className="font-hammersmith bg-pink-50 w-full py-12 mb-10" ref={sectionRef}>
+        <h3 className="text-3xl font-bold text-center mb-10 text-red-500">Why Choose Us? <span role="img" aria-label="Globe">🌍</span></h3>
         <div className="flex flex-col md:flex-row justify-center gap-10 md:space-x-20 mt-20 mb-10"> {/* Adjusted responsive flex layout */}
           <div className="flex flex-col items-center mb-8 md:mb-0">
             <img src={globeIcon} alt="Destinations" className="w-12 h-12 mb-4 object-contain" />

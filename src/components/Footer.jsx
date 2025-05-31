@@ -7,7 +7,7 @@ import telephoneLogo from '../assets/footer/telephone.png';
 
 const Footer = () => {
   return (
-    <div className="bg-red-500 py-10 text-white mt-20 overflow-x-hidden">
+    <div className="font-hammersmith bg-red-500 py-10 text-white mt-20 overflow-x-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row justify-between items-start space-y-10 p-0 pl-10 lg:space-y-0 md:px-10 md:py-1 lg:pl-20">
           {/* Contact Us Section */}
