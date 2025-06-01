@@ -19,7 +19,7 @@ const About = () => {
   const visionPoints = [
     "Deliver exceptional and memorable travel experiences.",
     "Be the trusted tour provider in the region chosen by customers.",
-    "Promote sustainable and responsible tourism.",
+    "Promote sustainable and responsible tourism in all area of services.",
     "Continuously innovate and adapt to customer needs."
   ];
 
