@@ -35,7 +35,7 @@ const RentalOthers = () => {
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-red-50 to-white px-4 py-10 sm:px-10 md:px-20 lg:px-8 mt-16">
-        <Link to="/others" className="text-base lg:text-xl w-full mt-4 ml-0 flex flex-row items-center lg:pl-20 lg:mt-10">
+        <Link to="/others" className="text-base lg:text-xl w-full mt-4 pl-0 flex flex-row items-center lg:pl-20 lg:mt-10">
           <img src={backArrow} alt="Back" className="w-6 h-6 hover:scale-110 transition-transform" />
           <h2 className="text-red-400 font-bold mt-[5px] lg:mt-[3px] ml-2 hover:scale-110 transition-transform">BACK</h2>
         </Link>
