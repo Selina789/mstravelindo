@@ -28,11 +28,46 @@ const indonesiaTours = [
     image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748704803/batam_e2fwkt.jpg',
   },
   {
+    title: 'Day Trip in Batam',
+    departureDate: 'Flexible Min. 2 Pax',
+    duration: '1 Days',
+    price: '400,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748704803/batam_e2fwkt.jpg',
+  },
+  {
+    title: '2D Free & Ez Batam',
+    departureDate: 'Flexible Min. 2 Pax',
+    duration: '2 Days',
+    price: '850,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748704803/batam_e2fwkt.jpg',
+  },
+  {
     title: 'Nipah Staycation',
     departureDate: 'Flexible',
     duration: '1 Day',
     price: '1,980,000',
     image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748705036/nipah_rtrgzc.jpg',
+  },
+  {
+    title: '1D Lagoi - Bintan',
+    departureDate: 'Flexible Min. 4 Pax',
+    duration: '1 Day',
+    price: '400,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748775670/bintan_px0teh.jpg',
+  },
+  {
+    title: '2D Free & Ez Bintan',
+    departureDate: 'Flexible Min. 4 Pax',
+    duration: '2 Day',
+    price: '1,000,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748775670/bintan_px0teh.jpg',
+  },
+  {
+    title: '4D Labuan Bajo',
+    departureDate: 'Flexible',
+    duration: '2 Day',
+    price: '1,000,000',
+    image: 'https://res.cloudinary.com/ddotc6ecd/image/upload/v1748775804/labuan_pkqsan.jpg',
   },
 ];
 
@@ -41,7 +76,7 @@ const IndonesiaTours = () => (
     {/* Back Button outside layout flow */}
     <div className="relative mt-10 top-20 pl-5 lg:pl-20">
       <Link
-        to="/"
+        to="/tours"
         className="flex items-center text-base lg:text-xl group hover:text-red-600"
       >
         <img

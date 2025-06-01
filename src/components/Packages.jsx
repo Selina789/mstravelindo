@@ -2,22 +2,22 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import finlandImage from '../assets/packages-landing/finland.jpg';
-import shanghaiImage from '../assets/packages-landing/shanghai.jpg';
+import vietnamImage from '../assets/packages-landing/vietnam.jpg';
 import norwayImage from '../assets/packages-landing/norway.jpg';
-import beijingImage from '../assets/packages-landing/beijing.jpg';
+import spainImage from '../assets/packages-landing/spain.jpg';
 import thailandImage from '../assets/packages-landing/thailand.jpg';
-import parisImage from '../assets/packages-landing/paris.jpg';
+import hainanImage from '../assets/packages-landing/hainan.jpg';
 import leftLogo from '../assets/packages-landing/left-logo.png';
 import rightLogo from '../assets/packages-landing/right-logo.png';
 
 function SpecialOffers() {
   const offers = [
-    { image: shanghaiImage, title: 'Shanghai', tours: 38, span: 'lg:col-span-2' },
-    { image: finlandImage, title: 'Finland', tours: 32 },
-    { image: norwayImage, title: 'Norway', tours: 54 },
-    { image: beijingImage, title: 'Beijing', tours: 14, span: 'lg:col-span-2' },
-    { image: thailandImage, title: 'Thailand', tours: 9 },
-    { image: parisImage, title: 'Paris', tours: 16, span: 'lg:col-span-2' },
+    { image: hainanImage, title: 'Hainan', tours: 1, link:'/tours/asia', span: 'lg:col-span-2' },
+    { image: finlandImage, title: 'Finland', tours: 2, link:'/tours/europe'},
+    { image: norwayImage, title: 'Norway', tours: 2, link:'/tours/europe'},
+    { image: vietnamImage, title: 'Vietnam', tours: 3, link:'/tours/asia', span: 'lg:col-span-2' },
+    { image: thailandImage, title: 'Thailand', tours: 3, link:'/tours/asia'},
+    { image: spainImage, title: 'Spain', tours: 1, link:'/tours/europe', span: 'lg:col-span-2' },
   ];
 
   return (
@@ -52,31 +52,32 @@ function SpecialOffers() {
                 className="w-full h-[270px] object-cover object-center rounded-lg"
               />
 
-              {/* Hover content (for lg and up) */}
-              <div className="
-                absolute inset-0 hidden lg:flex items-center justify-center
-                bg-black bg-opacity-50 opacity-0 group-hover:opacity-100
-                transition-opacity duration-300 rounded-lg
-              ">
-                <div className="text-center text-white">
-                  <h3 className="text-2xl font-semibold">{offer.title}</h3>
-                  <p className="text-lg mt-2">{offer.tours} Tours</p>
+              <a href={offer.link}>
+                <div className="
+                  absolute inset-0 hidden lg:flex items-center justify-center
+                  bg-black bg-opacity-50 opacity-0 group-hover:opacity-100
+                  transition-opacity duration-300 rounded-lg
+                ">
+                  <div className="text-center text-white">
+                    <h3 className="text-2xl font-semibold">{offer.title}</h3>
+                    <p className="text-lg mt-2">{offer.tours} Tours</p>
+                  </div>
                 </div>
-              </div>
 
-              {/* Static visible content for sm and md screens */}
-              <div className="
-                absolute bottom-0 left-0 z-10
-                w-full bg-gradient-to-t bg-black bg-opacity-40 from-black/70 to-transparent
-                px-4 py-3
-                text-white
-                flex flex-col justify-end
-                rounded-b-lg
-                lg:hidden
-              ">
-                <h3 className="text-lg font-semibold leading-tight">{offer.title}</h3>
-                <p className="text-sm">{offer.tours} Tours</p>
-              </div>
+                <div className="
+                  absolute bottom-0 left-0 z-10
+                  w-full bg-gradient-to-t bg-black bg-opacity-40 from-black/70 to-transparent
+                  px-4 py-3
+                  text-white
+                  flex flex-col justify-end
+                  rounded-b-lg
+                  lg:hidden
+                ">
+                  <h3 className="text-lg font-semibold leading-tight">{offer.title}</h3>
+                  <p className="text-sm">{offer.tours} Tours</p>
+                </div>
+              </a>
+              
             </motion.div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import chinaImage from '../assets/tours-landing/china-potrait.jpg';
-import parisImage from '../assets/tours-landing/paris-potrait.jpg';
+import spainImage from '../assets/tours-landing/spain-potrait.jpg';
 import singaporeImage from '../assets/tours-landing/singapore-potrait.jpg';
 import thailandImage from '../assets/tours-landing/thailand-potrait.jpg';
 import taiwanImage from '../assets/tours-landing/taiwan-potrait.jpg';
@@ -14,48 +14,57 @@ import '../index.css';
 const slides = [
   {
     image: chinaImage,
-    title: 'Chinatown Tour',
-    description: 'Explore the rich cultural heritage of Chinatown!',
+    title: 'China Tour',
+    description: 'Explore the rich cultural heritage of China!',
+    link: '/tours/asia',
   },
   {
-    image: parisImage,
-    title: 'Paris City Tour',
-    description: 'Discover the iconic landmarks of Paris, including the Eiffel Tower!',
+    image: spainImage,
+    title: 'Spain City Tour',
+    description: 'Discover the magic of Spain and Portugal in one unforgettable journey!',
+    link: '/tours/europe',
   },
   {
     image: singaporeImage,
     title: 'Singapore Garden Tour',
     description: 'Take a stroll through the stunning Gardens by the Bay!',
+    link: '/tours/asia',
   },
   {
     image: thailandImage,
-    title: 'Thailand Temple Tour',
-    description: 'Wander through golden temples and vibrant floating markets in Bangkok!',
+    title: 'Thailand Exotic Tour',
+    description: 'Wander through golden temples and vibrant floating markets in Thailand!',
+    link: '/tours/asia',
   },
   {
     image: taiwanImage,
     title: 'Taiwan Discovery Tour',
     description: 'Explore vibrant streets, tasty snacks, and stunning mountain views!',
+    link: '/tours/asia',
   },
   {
     image: malaysiaImage,
     title: 'Malaysia City Lights Tour',
-    description: 'Marvel at the Petronas Towers and savor delicious street food in Kuala Lumpur!',
+    description: 'Marvel at the Petronas Towers and savor delicious street food in Malaysia!',
+    link: '/tours/asia',
   },
   {
     image: baliImage,
     title: 'Bali Beach Escape',
     description: 'Soak up the sun on Bali’s stunning beaches and discover sacred temples!',
+    link: '/tours/indonesia',
   },
   {
     image: samosirImage,
     title: 'Samosir Lake Getaway',
     description: 'Unwind by the crystal-clear waters of Lake Toba and explore Batak culture!',
+    link: '/tours/indonesia',
   },
   {
     image: koreaImage,
-    title: 'Korea Culture & K-Drama Tour',
-    description: 'Walk the vibrant streets of Seoul and visit famous K-drama spots!',
+    title: 'Korea Culture & Tour',
+    description: 'Walk the vibrant streets of Korea and visit famous K-drama spots!',
+    link: '/tours/asia',
   }
 ];
 
@@ -133,7 +142,7 @@ function Tours() {
                   display: index >= currentSlide && index < currentSlide + slidesPerPage ? 'block' : 'none',
                 }}
               >
-                <a href="#">
+                <a href={slide.link}>
                   <img
                     src={slide.image}
                     alt={slide.title}
@@ -141,10 +150,10 @@ function Tours() {
                   />
                 </a>
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-black bg-opacity-50 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
-                  <a href="#">
+                  <a href={slide.link}>
                     <h3 className="text-base sm:xl md:xl lg:2xl font-bold">{slide.title}</h3>
                   </a>
-                  <a href="#">
+                  <a href={slide.link}>
                     <p className="text-[10px] sm:text-base md:text-base lg:text-sm mt-4">{slide.description}</p>
                   </a>
                 </div>

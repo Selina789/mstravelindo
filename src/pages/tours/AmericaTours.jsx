@@ -12,7 +12,7 @@ const AmericaTours = () => (
     {/* Back Button outside layout flow */}
     <div className="relative mt-10 top-20 pl-5 lg:pl-20">
       <Link
-        to="/"
+        to="/tours"
         className="flex items-center text-base lg:text-xl group hover:text-red-600"
       >
         <img

@@ -16,7 +16,7 @@ const ContactPage = () => {
     <div className="font-hammersmith max-w-4xl mx-auto px-6 pt-12 pb-6 text-center mt-[100px] text-red-600">
       {/* Company Title */}
       <h1 className="text-4xl md:text-5xl font-extrabold mb-3">MSTravelindo</h1>
-      <a href="" className="font-bold text-lg hover:text-red-800 slowmo-link-hover explore-link">(PT. Mitra Sukses Travelindo)</a>
+      <a href="/about" className="font-bold text-lg hover:text-red-800 slowmo-link-hover explore-link">(PT. Mitra Sukses Travelindo)</a>
 
       <hr className="mt-8 border-red-600 w-full md:w-[350px] mx-auto" />
 

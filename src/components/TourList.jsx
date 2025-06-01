@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter, faMap } from '@fortawesome/free-solid-svg-icons';
 import '../index.css';
@@ -9,12 +9,16 @@ const TourList = ({ title, subtitle, tours }) => {
   const [page, setPage] = useState(1);
   const perPage = 12;
 
-  // Safely filter tours by selected duration
+  // Smooth scroll to top on page or filter change
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [page, selectedDuration]);
+
   const filteredTours = (tours || []).filter((tour) => {
     const durationStr = tour?.duration || '';
     const days = parseInt(durationStr.match(/\d+/)?.[0] || '0');
     if (selectedDuration === '1-5') return days >= 1 && days <= 5;
-    if (selectedDuration === '6-10') return days >= 6 && days <= 10;
+    if (selectedDuration === '6-13') return days >= 6 && days <= 13;
     return true;
   });
 
@@ -22,7 +26,7 @@ const TourList = ({ title, subtitle, tours }) => {
   const paginatedTours = filteredTours.slice((page - 1) * perPage, page * perPage);
 
   return (
-    <div className="min-h-full bg-white px-4 py-8 sm:px-6 lg:px-8 mt-20 flex flex-col items-center">
+    <div className="min-h-full bg-white px-4 py-8 sm:px-6 lg:px-8 mt-[70px] flex flex-col items-center">
       <h1 className="text-4xl font-bold text-red-600 text-center mt-10">{title}</h1>
       {subtitle && <p className="text-red-500 italic text-center mb-6 mt-3">{subtitle}</p>}
 
@@ -38,7 +42,7 @@ const TourList = ({ title, subtitle, tours }) => {
 
         {dropdownOpen && (
           <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg">
-            {['All', '1-5', '6-10'].map((range) => (
+            {['All', '1-5', '6-13'].map((range) => (
               <button
                 key={range}
                 onClick={() => {
@@ -64,7 +68,9 @@ const TourList = ({ title, subtitle, tours }) => {
           <p className="text-xl font-semibold italic text-gray-600">No tours available at the moment.</p>
           <p className="text-sm text-gray-400 mt-1">Try adjusting your filters or check back soon.</p>
           <button
-            onClick={() => setSelectedDuration('All')}
+            onClick={() => {
+              setSelectedDuration('All');
+            }}
             className="slowmo-link-hover font-bold mt-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white text-sm rounded-full"
           >
             Browse All Tours
@@ -81,7 +87,7 @@ const TourList = ({ title, subtitle, tours }) => {
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-1 [@media(min-width:768px)_and_(max-width:886px)]:grid-cols-2 md:grid-cols-3 gap-12 justify-items-center">
+          <div className="grid grid-cols-1 [@media(min-width:768px)_and_(max-width:886px)]:grid-cols-2 md:grid-cols-3 gap-x-20 gap-y-[40px] justify-items-center">
             {paginatedTours.map((tour, index) => (
               <div
                 key={index}
@@ -89,7 +95,7 @@ const TourList = ({ title, subtitle, tours }) => {
               >
                 <img src={tour.image} alt={tour.title} className="w-full h-40 object-cover" />
                 <div className="p-4">
-                  <h3 className="font-bold text-lg text-gray-900">
+                  <h3 className="font-bold text-base text-gray-900">
                     {tour.title}{' '}
                     <span className="text-sm text-red-400 font-medium">({tour.duration})</span>
                   </h3>

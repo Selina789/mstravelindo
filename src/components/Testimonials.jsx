@@ -84,7 +84,7 @@ const Testimonials = () => {
       {/* Why Choose Us Section with Pink Background */}
       <div className="font-hammersmith bg-pink-50 w-full py-12 mb-10" ref={sectionRef}>
         <h3 className="text-3xl font-bold text-center mb-10 text-red-500">Why Choose Us? <span role="img" aria-label="Globe">🌍</span></h3>
-        <div className="flex flex-col md:flex-row justify-center gap-10 md:space-x-20 mt-20 mb-10"> {/* Adjusted responsive flex layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-4 mt-20 mb-10">
           <div className="flex flex-col items-center mb-8 md:mb-0">
             <img src={globeIcon} alt="Destinations" className="w-12 h-12 mb-4 object-contain" />
             <span className="text-2xl font-semibold">{destinations}+</span>

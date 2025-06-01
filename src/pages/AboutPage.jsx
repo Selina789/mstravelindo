@@ -1,5 +1,5 @@
 import React from 'react';
-import '../index.css'; // Create About.css and include glow effect
+import '../index.css';
 import Footer from "../components/Footer";
 import airplaneIcon from '../assets/about-img/airplane-ticket2.png';
 import visaIcon from '../assets/about-img/passport2.png';
@@ -16,16 +16,27 @@ const About = () => {
     { label: 'HOTEL RESERVATION', icon: hotelIcon },
   ];
 
+  const visionPoints = [
+    "Deliver exceptional and memorable travel experiences.",
+    "Be the most trusted tour provider in the region.",
+    "Promote sustainable and responsible tourism.",
+    "Continuously innovate and adapt to customer needs."
+  ];
+
+  const missionPoints = [
+    "Provide excellent travel packages and services.",
+    "Support local communities and economies.",
+    "Maintain transparency and professionalism.",
+    "Build lasting relationships with our clients."
+  ];
 
   const romans = ['I', 'II', 'III', 'IV'];
 
   return (
     <>
       <section className="font-hammersmith w-full px-4 py-12 max-w-6xl mx-auto mt-32 text-center">
-        {/* --- Your existing content unchanged --- */}
         {/* Top Section */}
         <div className="grid md:grid-cols-2 items-center gap-12 mb-16">
-          {/* Video Placeholder */}
           <div className="glow-box p-1 rounded-md w-full max-w-[300px] mx-auto md:max-w-[90%]">
             <div className="aspect-video w-full rounded-md overflow-hidden">
               <iframe
@@ -92,14 +103,12 @@ const About = () => {
               {/* Vision Column */}
               <div className="space-y-6 text-center">
                 <h3 className="text-3xl mb-10 font-bold text-red-700">VISION</h3>
-                {romans.map((num, i) => (
+                {visionPoints.map((point, i) => (
                   <div key={i} className="flex items-center justify-center gap-4">
                     <span className="w-12 h-12 hover:bg-red-500 hover:text-white slowmo-link-hover flex items-center justify-center border-2 border-red-500 text-rose-500 rounded-full font-semibold">
-                      {num}
+                      {romans[i]}
                     </span>
-                    <div className="bg-red-500 text-white rounded-lg px-6 py-4">
-                      Lorem ipsum dolor sit amet
-                    </div>
+                    <div className="bg-red-500 text-white rounded-lg px-6 py-4">{point}</div>
                   </div>
                 ))}
               </div>
@@ -107,13 +116,11 @@ const About = () => {
               {/* Mission Column */}
               <div className="space-y-6 text-center">
                 <h3 className="text-3xl mb-10 font-bold text-red-700">MISSION</h3>
-                {romans.map((num, i) => (
+                {missionPoints.map((point, i) => (
                   <div key={i} className="flex items-center justify-center gap-4">
-                    <div className="bg-red-500 text-white rounded-lg px-6 py-4">
-                      Lorem ipsum dolor sit amet
-                    </div>
+                    <div className="bg-red-500 text-white rounded-lg px-6 py-4">{point}</div>
                     <span className="w-12 h-12 hover:bg-red-500 hover:text-white slowmo-link-hover flex items-center justify-center border-2 border-red-500 text-rose-500 rounded-full font-semibold">
-                      {num}
+                      {romans[i]}
                     </span>
                   </div>
                 ))}
@@ -123,7 +130,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Footer goes here, full width */}
       <Footer />
     </>
   );

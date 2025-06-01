@@ -69,7 +69,7 @@ const Landing = () => {
       </div>
 
       {/* Dots */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, idx) => (
           <div
             key={idx}
