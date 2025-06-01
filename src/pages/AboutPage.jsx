@@ -18,16 +18,16 @@ const About = () => {
 
   const visionPoints = [
     "Deliver exceptional and memorable travel experiences.",
-    "Be the most trusted tour provider in the region.",
+    "Be the trusted tour provider in the region chosen by customers.",
     "Promote sustainable and responsible tourism.",
     "Continuously innovate and adapt to customer needs."
   ];
 
   const missionPoints = [
-    "Provide excellent travel packages and services.",
-    "Support local communities and economies.",
-    "Maintain transparency and professionalism.",
-    "Build lasting relationships with our clients."
+    "Provide excellent travel packages and services to customers.",
+    "Support local communities and strengthen regional tourism.",
+    "Maintain transparency and professionalism in all dealings.",
+    "Build lasting relationships with clients by consistently meeting their needs."
   ];
 
   const romans = ['I', 'II', 'III', 'IV'];
@@ -74,6 +74,7 @@ const About = () => {
           </div>
         </div>
 
+        {/* Services */}
         <div className="text-center mb-6 mt-20">
           <span className="bg-red-600 text-white px-8 py-2 text-lg font-semibold mt-20">
             OUR SERVICES
@@ -93,38 +94,39 @@ const About = () => {
         </div>
 
         {/* Vision & Mission Section */}
-        <div className="mt-24 px-4 max-w-6xl mx-auto text-center mb-10">
-          <div className="relative">
-            <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 h-full pt-12">
-              <div className="w-1 h-full bg-rose-300 mx-auto" />
+        <div className="mt-24 px-4 max-w-5xl mx-auto mb-10">
+          <div className="grid md:grid-cols-2 gap-16 relative">
+            {/* Vertical Divider */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-red-300"></div>
+
+            {/* Vision Section */}
+            <div className="space-y-6 text-left">
+              <h3 className="text-3xl mb-6 font-bold text-red-700 text-center md:text-center">VISION</h3>
+              {visionPoints.map((point, i) => (
+                <div key={i} className="flex items-center justify-start gap-4">
+                  <span className="slowmo-link-hover w-10 h-10 min-w-[2.5rem] flex items-center justify-center border-2 border-red-500 text-red-500 rounded-full font-semibold text-sm hover:bg-red-500 hover:text-white transition">
+                    {romans[i]}
+                  </span>
+                  <div className="flex items-center bg-red-500 text-white rounded-lg px-4 py-2 text-sm md:text-base w-full min-h-[50px]">
+                    {point}
+                  </div>
+                </div>
+              ))}
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12">
-              {/* Vision Column */}
-              <div className="space-y-6 text-center">
-                <h3 className="text-3xl mb-10 font-bold text-red-700">VISION</h3>
-                {visionPoints.map((point, i) => (
-                  <div key={i} className="flex items-center justify-center gap-4">
-                    <span className="w-12 h-12 hover:bg-red-500 hover:text-white slowmo-link-hover flex items-center justify-center border-2 border-red-500 text-rose-500 rounded-full font-semibold">
-                      {romans[i]}
-                    </span>
-                    <div className="bg-red-500 text-white rounded-lg px-6 py-4">{point}</div>
+            {/* Mission Section */}
+            <div className="space-y-6 text-right">
+              <h3 className="text-3xl mb-6 font-bold text-red-700 text-center md:text-center">MISSION</h3>
+              {missionPoints.map((point, i) => (
+                <div key={i} className="flex items-center justify-end gap-4">
+                  <div className="flex items-center justify-end bg-red-500 text-white rounded-lg px-4 py-2 text-sm md:text-base w-full min-h-[50px]">
+                    {point}
                   </div>
-                ))}
-              </div>
-
-              {/* Mission Column */}
-              <div className="space-y-6 text-center">
-                <h3 className="text-3xl mb-10 font-bold text-red-700">MISSION</h3>
-                {missionPoints.map((point, i) => (
-                  <div key={i} className="flex items-center justify-center gap-4">
-                    <div className="bg-red-500 text-white rounded-lg px-6 py-4">{point}</div>
-                    <span className="w-12 h-12 hover:bg-red-500 hover:text-white slowmo-link-hover flex items-center justify-center border-2 border-red-500 text-rose-500 rounded-full font-semibold">
-                      {romans[i]}
-                    </span>
-                  </div>
-                ))}
-              </div>
+                  <span className="slowmo-link-hover w-10 h-10 min-w-[2.5rem] flex items-center justify-center border-2 border-red-500 text-red-500 rounded-full font-semibold text-sm hover:bg-red-500 hover:text-white transition">
+                    {romans[i]}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

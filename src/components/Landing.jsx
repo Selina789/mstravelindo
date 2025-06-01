@@ -5,7 +5,7 @@ import backgroundImage1 from '../assets/landing/landing2.png';
 import backgroundImage2 from '../assets/landing/landing3.png';
 // Add more images as needed
 
-const images = [backgroundImage1, backgroundImage2];
+const images = [backgroundImage2, backgroundImage1];
 
 const Landing = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
