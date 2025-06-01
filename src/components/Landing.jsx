@@ -49,9 +49,12 @@ const Landing = () => {
           Pack your bags, chase the sun, and make memories with MSTravelindo 🌞✈️
         </p>
 
-        <button className="slowmo-button-hover font-bold bg-red-500 text-white py-3 px-8 rounded-lg text-lg sm:text-xl md:text-2xl hover:bg-red-700 transition tracking-wider">
+        <a href="/contacts">
+          <button className="slowmo-button-hover font-bold bg-red-500 text-white py-3 px-8 rounded-lg text-lg sm:text-xl md:text-2xl hover:bg-red-700 transition tracking-wider">
           PLAN YOUR TRIP
-        </button>
+          </button>
+        </a>
+        
       </div>
 
       {/* Left and Right Arrows */}
