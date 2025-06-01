@@ -3,7 +3,7 @@ import { useSwipeable } from 'react-swipeable';
 import '../index.css';
 import backgroundImage1 from '../assets/landing/landing2.png';
 import backgroundImage2 from '../assets/landing/landing3.png';
-// Add more images as needed
+import { Link } from 'react-router-dom';
 
 const images = [backgroundImage2, backgroundImage1];
 
@@ -49,11 +49,11 @@ const Landing = () => {
           Pack your bags, chase the sun, and make memories with MSTravelindo 🌞✈️
         </p>
 
-        <a href="/contacts">
+        <Link to='/contacts'>
           <button className="slowmo-button-hover font-bold bg-red-500 text-white py-3 px-8 rounded-lg text-lg sm:text-xl md:text-2xl hover:bg-red-700 transition tracking-wider">
           PLAN YOUR TRIP
           </button>
-        </a>
+        </Link>
         
       </div>
 
