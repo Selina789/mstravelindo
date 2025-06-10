@@ -23,7 +23,7 @@ const Testimonials = () => {
       } else {
         clearInterval(interval);
       }
-    }, 20); // Adjust the speed here
+    }, 20);
   };
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const Testimonials = () => {
           increment(0, 1000, setTransactionsCompleted);
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is in view
+      { threshold: 0.5 }
     );
 
     if (sectionRef.current) {
@@ -52,28 +52,23 @@ const Testimonials = () => {
 
   return (
     <div className="font-hammersmith flex flex-col justify-center items-center">
-      {/* Section Title */}
       <div className="mb-20 mt-10">
         <div className="text-center mb-12 flex items-center justify-center align-center space-x-4">
           <h2 className="text-2xl font-bold text-red-600 mb-3 lg:text-3xl md:text-3xl">What Our Customers Say</h2>
           <img src={speechBubble} className="w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10" alt="Speech Bubble" />
         </div>
 
-        {/* Testimonials Grid with Centered Text */}
         <div className="flex flex-wrap justify-center gap-20 mb-14">
-          {/* Testimonial 1 */}
           <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center flex flex-col justify-between hover:scale-105 transition-all ease-in-out duration-300">
             <p className="text-lg text-gray-700 mb-4 italic">"Absolutely unforgettable experience! The views, the food, the people – 10/10 would go again!"</p>
             <p className="text-red-500 font-semibold text-lg">LUCY</p>
           </div>
           
-          {/* Testimonial 2 */}
           <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center flex flex-col justify-between hover:scale-105 transition-all ease-in-out duration-300">
             <p className="text-lg text-gray-700 mb-4 italic">"I loved every moment! Booking was easy and the local guides were so friendly and fun!"</p>
             <p className="text-red-500 font-semibold text-lg">CATHERINE</p>
           </div>
           
-          {/* Testimonial 3 */}
           <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center flex flex-col justify-betwee hover:scale-105 transition-all ease-in-out duration-300n">
             <p className="text-lg text-gray-700 mb-4 italic">"Best vacation I’ve ever had. Everything was perfectly organized. Stress-free and magical."</p>
             <p className="text-red-500 font-semibold text-lg">DAVIN</p>
@@ -81,7 +76,6 @@ const Testimonials = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section with Pink Background */}
       <div className="font-hammersmith bg-pink-50 w-full py-12 mb-10" ref={sectionRef}>
         <h3 className="text-3xl font-bold text-center mb-10 text-red-500">Why Choose Us? <span role="img" aria-label="Globe">🌍</span></h3>
         <div className="w-fit mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20 px-4 mt-20 mb-10">

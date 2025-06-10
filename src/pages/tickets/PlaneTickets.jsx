@@ -173,17 +173,14 @@ const PlaneTickets = () => {
   return (
     <>
       <div className="min-h-screen bg-gradient-to-b from-red-50 to-white px-4 py-8 sm:px-6 lg:px-8 mt-16 flex flex-col items-center">
-        {/* Back button */}
         <Link to="/tickets" className="text-base lg:text-xl w-full mt-4 pl-0 flex flex-row items-center lg:pl-20 lg:mt-10">
           <img src={backArrow} alt="Back" className="w-6 h-6 hover:scale-110 slowmo-link-hover" />
           <h2 className="text-red-400 font-bold mt-[5px] lg:mt-[3px] ml-2 hover:scale-110 slowmo-link-hover">BACK</h2>
         </Link>
 
-        {/* Title */}
         <h1 className="text-4xl font-bold text-red-600 text-center mt-5">AIRPLANE</h1>
         <p className="text-red-400 italic text-center mb-6 mt-3">Explore international destinations</p>
 
-        {/* Continent Filter */}
         <div className="mb-8">
           <select
             value={selectedContinent}
@@ -196,7 +193,6 @@ const PlaneTickets = () => {
           </select>
         </div>
 
-        {/* Animated Grid */}
         <AnimatePresence mode="wait">
           <motion.div
             key={page}
@@ -231,7 +227,6 @@ const PlaneTickets = () => {
           </motion.div>
         </AnimatePresence>
 
-        {/* Pagination */}
         <div className="flex items-center mt-12 space-x-4">
           <button
             onClick={() => setPage((prev) => Math.max(prev - 1, 1))}

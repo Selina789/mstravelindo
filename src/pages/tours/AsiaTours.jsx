@@ -199,7 +199,6 @@ const asiaTours = [
 
 const AsiaTours = () => (
   <>
-    {/* Back Button outside layout flow */}
     <div className="relative  mt-10 top-20 pl-5 lg:pl-20">
       <Link
         to="/tours"
@@ -216,7 +215,6 @@ const AsiaTours = () => (
       </Link>
     </div>
 
-    {/* Main Content */}
     <TourList
       title="ASIA"
       subtitle="(Continent of contrasts)"

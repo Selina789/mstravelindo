@@ -45,7 +45,6 @@ const europeTours = [
 
 const EuropeTours = () => (
   <>
-    {/* Back Button outside layout flow */}
     <div className="relative  mt-10 top-20 pl-5 lg:pl-20">
       <Link
         to="/tours"
@@ -62,7 +61,6 @@ const EuropeTours = () => (
       </Link>
     </div>
 
-    {/* Main Content */}
     <TourList
       title="EUROPE"
       subtitle="(Classic charm meets modern marvels)"

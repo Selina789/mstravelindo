@@ -35,7 +35,6 @@ const About = () => {
   return (
     <>
       <section className="font-hammersmith w-full px-4 py-12 max-w-6xl mx-auto mt-32 text-center">
-        {/* Top Section */}
         <div className="grid md:grid-cols-2 items-center gap-12 mb-16">
           <div className="glow-box p-1 rounded-md w-full max-w-[300px] mx-auto md:max-w-[90%]">
             <div className="aspect-video w-full rounded-md overflow-hidden">
@@ -50,7 +49,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Info */}
           <div className="text-center md:text-left space-y-4">
             <div className="inline-block bg-white text-rose-800 border-2 border-red-500 font-semibold text-[10px] px-4 py-1 rounded uppercase tracking-wider">
               About Us
@@ -74,7 +72,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Services */}
         <div className="text-center mb-6 mt-20">
           <span className="bg-red-600 text-white px-8 py-2 text-lg font-semibold mt-20">
             OUR SERVICES
@@ -93,14 +90,11 @@ const About = () => {
           ))}
         </div>
 
-        {/* Vision & Mission Section */}
         <div className="mt-24 px-4 max-w-5xl mx-auto mb-10">
           <div className="grid md:grid-cols-2 gap-16 relative">
-            {/* Vertical Divider */}
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-red-300"></div>
 
-            {/* Vision Section */}
-            <div className="space-y-6 text-left">
+            <div className="space-y-6 text-center">
               <h3 className="text-3xl mb-6 font-bold text-red-700 text-center md:text-center">VISION</h3>
               {visionPoints.map((point, i) => (
                 <div key={i} className="flex items-center justify-start gap-4">
@@ -114,8 +108,7 @@ const About = () => {
               ))}
             </div>
 
-            {/* Mission Section */}
-            <div className="space-y-6 text-right">
+            <div className="space-y-6 text-center">
               <h3 className="text-3xl mb-6 font-bold text-red-700 text-center md:text-center">MISSION</h3>
               {missionPoints.map((point, i) => (
                 <div key={i} className="flex items-center justify-end gap-4">

@@ -16,6 +16,6 @@ module.exports = {
     },
   },
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // include all React files
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
 };

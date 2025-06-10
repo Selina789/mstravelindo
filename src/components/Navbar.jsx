@@ -85,7 +85,7 @@ const Navbar = () => {
 
         </div>
 
-        {/* Mobile Navbar */}
+        {/* Hamburger Menu */}
         <div className={`hamburger-link lg:hidden md:hidden transition-all duration-[1200ms] ease-in-out absolute top-[75px] left-0 w-full bg-blue-600 text-white p-6 overflow-hidden ${isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
           <div className="flex justify-end h-3">
             <button className="text-white font-bold text-2xl" onClick={toggleMenu}>&times;</button>
@@ -102,7 +102,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Hamburger Button */}
+        {/* Hamburger Icon */}
         <div className="flex justify-between align-center items-center">
           <Link to="/"><img src={mstLogo2} className="lg:hidden md:hidden h-6 w-auto object-contain space-y-auto" alt="MST Logo" /></Link>
           <div className="hamburger-menu lg:hidden md:hidden flex flex-col space-y-2 cursor-pointer" onClick={toggleMenu}>

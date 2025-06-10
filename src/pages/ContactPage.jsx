@@ -1,4 +1,3 @@
-// src/pages/ContactPage.jsx
 import React from 'react';
 import {
   FaInstagram,
@@ -14,7 +13,6 @@ const ContactPage = () => {
   return (
   <>
     <div className="font-hammersmith max-w-4xl mx-auto px-6 pt-12 pb-6 text-center mt-[100px] text-red-600">
-      {/* Company Title */}
       <h1 className="text-4xl md:text-5xl font-extrabold mb-3">MSTravelindo</h1>
       <a href="/about" className="font-bold text-lg hover:text-red-800 slowmo-link-hover explore-link">(PT. Mitra Sukses Travelindo)</a>
 
@@ -52,13 +50,11 @@ const ContactPage = () => {
 
       <hr className="mt-10 border-red-600 w-full md:w-[350px] mx-auto" />
       
-      {/* Address */}
       <p className="block md:flex lg:flex justify-center w-fit text-center mx-auto gap-3 text-lg mt-8 mb-8 ">
         <FaMapMarkerAlt className="mb-2 md:mb-0 text-red-600 text-2xl drop-shadow-md mx-auto" />
         <a href="" className="hover:text-red-800 slowmo-link-hover">Komplek Nagoya Newton Blok S No 5 - Batam</a>
       </p>
 
-      {/* Google Map Embed */}
       <div className="slowmo-link-hover glow-box p-1 rounded-md mt-6 w-full md:w-[400px] mx-auto rounded-lg overflow-hidden shadow-md">
         <iframe
           title="MSTravelindo Map"

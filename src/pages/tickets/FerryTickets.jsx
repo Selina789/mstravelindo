@@ -108,7 +108,6 @@ const FerryTickets = () => {
     return priceMap[key] ?? 'N/A';
   };
 
-  // ✅ Scroll to top when page changes
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [page]);
@@ -136,7 +135,6 @@ const FerryTickets = () => {
           </select>
         </div>
 
-        {/* 🎞 Animated Ticket Grid */}
         <AnimatePresence mode="wait">
           <motion.div
             key={page}

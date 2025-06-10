@@ -12,7 +12,6 @@ const FloatingWhatsapp = () => {
 
   return (
     <div className="fixed bottom-0 right-2 md:bottom-3 md:right-6 z-[9999] flex flex-col items-center">
-      {/* Dropdown with animation but no blocking when closed */}
       <div
         className={`
           flex flex-col font-bold items-center space-y-4 mb-4 mr-2

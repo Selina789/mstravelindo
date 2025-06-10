@@ -9,7 +9,6 @@ const americaTours = [];
 
 const AmericaTours = () => (
   <>
-    {/* Back Button outside layout flow */}
     <div className="relative mt-10 top-20 pl-5 lg:pl-20">
       <Link
         to="/tours"
@@ -26,7 +25,6 @@ const AmericaTours = () => (
       </Link>
     </div>
 
-    {/* Main Content */}
     <TourList
       title="AMERICA"
       subtitle="(A vast and diverse adventure)"

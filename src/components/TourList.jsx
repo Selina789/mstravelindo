@@ -9,7 +9,6 @@ const TourList = ({ title, subtitle, tours }) => {
   const [page, setPage] = useState(1);
   const perPage = 12;
 
-  // Smooth scroll to top on page or filter change
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [page, selectedDuration]);
@@ -30,7 +29,6 @@ const TourList = ({ title, subtitle, tours }) => {
       <h1 className="text-4xl font-bold text-red-600 text-center mt-10">{title}</h1>
       {subtitle && <p className="text-red-500 italic text-center mb-6 mt-3">{subtitle}</p>}
 
-      {/* Filter Dropdown */}
       <div className="relative mb-8">
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -61,7 +59,6 @@ const TourList = ({ title, subtitle, tours }) => {
         )}
       </div>
 
-      {/* Tour Cards or Empty Message */}
       {filteredTours.length === 0 ? (
         <div className="flex flex-col items-center mt-20 mb-20 text-center">
           <FontAwesomeIcon icon={faMap} className="text-6xl text-red-300 mb-4" />
@@ -118,7 +115,6 @@ const TourList = ({ title, subtitle, tours }) => {
             ))}
           </div>
 
-          {/* Pagination */}
           <div className="flex items-center mt-12 space-x-4">
             <button
               onClick={() => setPage((prev) => Math.max(prev - 1, 1))}

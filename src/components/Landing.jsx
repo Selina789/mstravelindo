@@ -35,10 +35,8 @@ const Landing = () => {
       className="relative h-screen bg-cover bg-center transition-all duration-500"
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
-      {/* Optional: Overlay */}
       <div className="absolute inset-0 bg-black opacity-10"></div>
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center text-white h-full px-4">
         <h1 className="font-lilita landing-headline text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 mt-0 md:mt-5 pt-10 text-center">
           <span className="block">ADVENTURE AWAITS</span>
@@ -57,7 +55,6 @@ const Landing = () => {
         
       </div>
 
-      {/* Left and Right Arrows */}
       <div
         className="absolute top-1/2 transform left-5 -translate-y-1/2 left-5 text-white text-md md:text-3xl cursor-pointer z-20"
         onClick={goToPrevious}
@@ -71,7 +68,6 @@ const Landing = () => {
         ❯
       </div>
 
-      {/* Dots */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
         {images.map((_, idx) => (
           <div
