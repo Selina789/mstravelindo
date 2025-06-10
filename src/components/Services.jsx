@@ -34,10 +34,10 @@ const servicesData = [
   },
 ];
 
-const CARD_WIDTH = 256 + 24; // 256 = w-60 + px, 24 = gap-6
+const CARD_WIDTH = 256 + 24;
 
 function App() {
-  const [items, setItems] = useState(servicesData); // Track the items
+  const [items, setItems] = useState(servicesData);
   const trackRef = useRef(null);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ function App() {
         setItems(updatedItems);
         trackRef.current.style.transform = "translateX(0)";
       }, 600);
-    }, 4000); // Every 2.5s
+    }, 4000);
     return () => clearInterval(interval);
   }, [items]);
 
@@ -63,18 +63,16 @@ function App() {
         Various services to make your travelling life easy and happier, don't miss out on your trip!
       </p>
 
-      {/* Container */}
-      <div className="w-full overflow-hidden flex justify-center lg:pl-20 md:pl-0 pr-auto pb-5 mb-20 mt-20">
+      <div className="w-full overflow-hidden flex justify-center pr-auto pb-5 mb-20 mt-20">
         <div
           ref={trackRef}
-          className="flex gap-6"
+          className="flex gap-6 justify-center"
           style={{ width: `${CARD_WIDTH * items.length}px` }}
         >
-          {/* Render the first 5 items */}
           {items.map((service, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-lg w-60 py-6 px-4 flex-shrink-0 flex flex-col items-center"
+              className="bg-white shadow-lg rounded-lg w-[230px] py-6 px-4 flex-shrink-0 flex flex-col items-center"
             >
               <img src={service.img} alt={service.title} className="w-24 h-24 object-contain mb-4" />
               <h2 className="text-xl font-semibold text-gray-800">{service.title}</h2>

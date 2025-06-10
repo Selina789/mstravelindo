@@ -3,6 +3,7 @@ module.exports = {
     extend: {
       screens: {
         'lg-mid': { min: '1024px', max: '1270px' },
+        'lg-above-mid': { min: '1280px', max: '1535px' },
       },
       fontFamily: {
         quicksand: ['Quicksand', 'sans-serif'],
